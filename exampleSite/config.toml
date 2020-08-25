@@ -1,67 +1,72 @@
-baseURL = "https://portio-hugo.netlify.app/"
+baseURL = "http://example.org/"
 languageCode = "en-us"
 paginate = 6
 theme = "portio"
 title = "Portio"
-[[menu.main]]
-name = "Home"
-url = "#home"
-weight = 1
-[[menu.main]]
-name = "About"
-url = "#about"
-weight = 2
-[[menu.main]]
-name = "Service"
-url = "#service"
-weight = 3
-[[menu.main]]
-name = "Work"
-url = "#portfolio"
-weight = 4
-[[menu.main]]
-name = "Resume"
-url = "#resume"
-weight = 5
-[[menu.main]]
-name = "Blog"
-url = "#blog"
-weight = 6
-[[menu.main]]
-name = "Contact"
-url = "#contact"
-weight = 7
-[[menu.sitemap]]
-name = "About me"
-url = "about"
-weight = 1
-[[menu.sitemap]]
-name = "Frequently Ask Question"
-url = "#"
-weight = 2
-[[menu.sitemap]]
-name = "Privacy & Policy"
-url = "#"
-weight = 3
-[[menu.sitemap]]
-name = "Latest Article"
-url = "#"
-weight = 4
+  # Main Menu
+  [[menu.main]]
+    name = "Home"
+    url = "#home"
+    weight = 1
+  [[menu.main]]
+    name = "About"
+    url = "#about"
+    weight = 2
+  [[menu.main]]
+    name = "Service"
+    url = "#service"
+    weight = 3
+  [[menu.main]]
+    name = "Work"
+    url = "#portfolio"
+    weight = 4
+  [[menu.main]]
+    name = "Resume"
+    url = "#resume"
+    weight = 5
+  [[menu.main]]
+    name = "Blog"
+    url = "#blog"
+    weight = 6
+  [[menu.main]]
+    name = "Contact"
+    url = "#contact"
+    weight = 7
+
+  # Sitemap Menu
+  [[menu.sitemap]]
+    name = "About me"
+    url = "about"
+    weight = 1
+  [[menu.sitemap]]
+    name = "Frequently Ask Question"
+    url = "#"
+    weight = 2
+  [[menu.sitemap]]
+    name = "Privacy & Policy"
+    url = "#"
+    weight = 3
+  [[menu.sitemap]]
+    name = "Latest Article"
+    url = "#"
+    weight = 4
+
 [params]
-blogPageURL = "blog"
-contactLink = "contact"
-copyright = "All right reserved copyright © Portio 2020"
-footerLogo = "images/contact/widget-logo.png"
-formspreeURL = "https://formspree.io/xgenqoqr"
-googleAnalytics = "UA-175025671-1"
-logo = "images/site-navigation/logo.png"
-[params.address]
-address = "23 Khan Niketon, Grand Street, NYK."
-email = "hello@example.com"
-openingHours = "Open from 10am to 6pm (close at 5pm Sundays)"
-phone = "+(448) 833 5272 332"
-[params.map]
-APIkey = "AIzaSyC9rV6yesIygoVKTD6QLf_iCa9eiIIHqZ0"
-latitude = "23.7783741"
-longitude = "90.3746808"
-pinImage = "images/pin.png"
+  blogPageURL = "blog"
+  contactLink = "contact"
+  copyright = "All right reserved copyright © Portio 2020"
+  footerLogo = "images/contact/widget-logo.png"
+  formspreeURL = "YOUR FORMSPREE URL"
+  googleAnalytics = "YOUR GOOGLE ANALYTICS CODE"
+  logo = "images/site-navigation/logo.png"
+
+  [params.address]
+    address = "23 Khan Niketon, Grand Street, NYK."
+    email = "hello@example.com"
+    openingHours = "Open from 10am to 6pm (close at 5pm Sundays)"
+    phone = "+(448) 833 5272 332"
+  [params.map]
+    APIkey = "YOUR GOOGLE MAP API"
+    latitude = "23.7783741"
+    longitude = "90.3746808"
+    pinImage = "images/pin.png"
