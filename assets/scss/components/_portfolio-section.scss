@@ -28,11 +28,24 @@
   &-item {
     width: 50%;
     padding: 30px;
+    @include tablet {
+      width: 100%;
+      padding: 0;
+    }
     &:nth-child(4n-3) {
       padding-right: 70px;
+      @include tablet {
+        padding-right: 0;
+      }
     }
     &:nth-child(4n-1) {
       padding-left: 90px;
+      @include tablet {
+        padding-left: 0;
+      }
+    }
+    &:not(:last-child) {
+      margin-bottom: 40px;
     }
     &-grid {
       display: flex;
@@ -88,6 +101,9 @@
           top: 50%;
           left: -30px;
           transform: translateY(-50%);
+        }
+        @include tablet {
+          transform: scaleY(1);
         }
       }
     }
