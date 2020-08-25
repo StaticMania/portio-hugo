@@ -1,0 +1,45 @@
+{{ with .Site.Data.testimonialSection }}
+    {{ if .enable }}
+        <section class="section testimonial">
+            <div class="testimonial__background_shape">
+                <svg viewBox="0 0 1920 79">
+                    <path d="M0 0h1920v79L0 0z" data-name="Path 1450" />
+                </svg>
+            </div>
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-lg-6 offset-lg-3">
+                        <div class="testimonial__header">
+                            <span>{{ .topTitle }}</span>
+                            <h1>{{ .title }}</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="testimonial__slider">
+                            {{ $section := .testimonial }}
+                            {{ range $section }}
+                                <div class="testimonial__slider_item">
+                                    <ul class="testimonial__slider_item-rating">
+                                        {{ $rating := .star | int }}
+                                        {{ $rating := sub $rating 1 }}
+                                        {{ range $i, $sequence := (seq 5) }} 
+                                            {{ if le $i $rating }}
+                                                <li><i class="fa fa-star"></i></li>
+                                            {{ else }}
+                                                <li><i class="fa fa-star inactive"></i></li>
+                                            {{ end }}
+                                        {{ end }}
+                                    </ul>
+                                    <p class="testimonial__slider_item-content"> {{ .comment }} </p>
+                                    <p class="testimonial__slider_item-author"><span>{{ .name }}</span> | {{ .time }}</p>
+                                </div>
+                            {{ end }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {{ end }}
+{{ end }}

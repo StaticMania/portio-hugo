@@ -1,0 +1,167 @@
+{{ define "main" }}
+
+<section class="section case-details">
+  <div class="svg-img">
+    <img src="{{ "images/hero/figure-svg.svg" | absURL }}" alt="" />
+  </div>
+  <div class="animate-shape">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 600 600"
+    >
+      <defs>
+        <linearGradient
+          id="d"
+          x1="0.929"
+          y1="0.111"
+          x2="0.263"
+          y2="0.935"
+          gradientUnits="objectBoundingBox"
+        >
+          <stop offset="0" stop-color="#f1f6f9" />
+          <stop offset="1" stop-color="#f1f6f9" stop-opacity="0" />
+        </linearGradient>
+      </defs>
+      <g data-name="blob-shape (3)">
+        <path
+          class="blob"
+          fill="url(#d)"
+          d="M455.4 151.1c43.1 36.7 73.4 92.8 60.8 136.3-12.7 43.5-68.1 74.4-111.3 119.4-43.1 45-74 104.1-109.8 109-35.9 5-76.7-44.2-111.8-89.2-35.2-45-64.7-85.8-70.8-132.6-6-46.8 11.6-99.6 46.7-136.3 35.2-36.6 88-57.2 142.4-58.8 54.5-1.7 110.6 15.6 153.8 52.2z"
+        />
+      </g>
+    </svg>
+  </div>
+  <div class="animate-pattern">
+    <img src="{{ "images/service/background-pattern.svg" | absURL }}" alt="background-shape" />
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1 text-center">
+        <div class="case-details-title">
+          <h1>{{ .Title }}</h1>
+        </div>
+        <p>
+          {{ .Params.shortDescription }}
+        </p>
+        <div class="case-details-info">
+          <div class="case-details-info-item">
+            <h5>Client</h5>
+            <p>{{ .Params.client }}</p>
+          </div>
+          <div class="case-details-info-item">
+            <h5>Service</h5>
+            <p>{{ .Params.service }}</p>
+          </div>
+          <div class="case-details-info-item">
+            <h5>Date</h5>
+            <p>{{ .PublishDate.Format "January 2, 2006" }}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="case-details-service">
+              <h3>Challenge</h3>
+              <p>
+                {{ .Params.challenge }}
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="case-details-service">
+              <h3>Solution</h3>
+              <p>
+                {{ .Params.solution }}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="case-details-thumb">
+          <img src="{{ .Params.thumbnail | absURL }}" alt="case-details" />
+        </div>
+        {{ .Content }}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <div class="case-details-nav">
+          {{ if .PrevInSection }}
+          <div class="previous">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15.556"
+                height="28.285"
+                viewBox="0 0 15.556 28.285"
+              >
+                <g data-name="Group 1243" fill="#2d2d2d">
+                  <path
+                    data-name="Path 1456"
+                    d="M3.391 12.728l9.75 14.142-.982 1.414-9.742-14.142z"
+                  />
+                  <path
+                    data-name="Path 1455"
+                    d="M13.137 1.41L3.39 15.558l-.975-1.415L12.166 0z"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="content">
+              <span>Prev case</span>
+              <h5 class="title"><a href="{{ .PrevInSection.Permalink }}">{{ .PrevInSection.Title }}</a></h5>
+            </div>
+          </div>
+          {{ end }}
+          <div class="social">
+            {{ $url := printf "%s" .Permalink | absLangURL }}
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/sharer/sharer.php?u={{ $url }}"><i class="fa fa-facebook-official"></i></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ $url }}"><i class="fa fa-linkedin-square"></i></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/intent/tweet?&url={{ $url }}"><i class="fa fa-twitter-square"></i></a>
+              </li>
+            </ul>
+          </div>
+          {{ if .NextInSection }}
+          <div class="next">
+            <div class="content">
+              <span>Next case</span>
+              <h5 class="title">
+                <a href="{{ .NextInSection.Permalink }}"
+                  >{{ .NextInSection.Title }}</a
+                >
+              </h5>
+            </div>
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15.556"
+                height="28.285"
+                viewBox="0 0 15.556 28.285"
+              >
+                <g data-name="Group 1244" fill="#2d2d2d">
+                  <path
+                    data-name="Path 1456"
+                    d="M12.162 12.725L2.416 26.87l.978 1.41 9.746-14.138z"
+                  />
+                  <path
+                    data-name="Path 1455"
+                    d="M2.416 1.415l9.743 14.141.975-1.414L3.39 0z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{{ end }}

@@ -1,0 +1,104 @@
+.breadCrumb{
+    padding: 200px 0 0;
+    position: relative;
+    .svg-img{
+        position: absolute;
+        bottom: -35%;
+        left: -7%;
+        animation: move_top 5s infinite linear;
+        @include desktop{
+            display: none;
+        }
+    }
+    .animate-shape{
+        position: absolute;
+        bottom: -60%;
+        right: 2%;
+        height: 300px;
+        width: 300px;
+        svg{
+            width: 100%;
+        }
+        @include desktop{
+            display: none;
+        }
+    }
+    .animate-pattern{
+        position: absolute;
+        bottom: -40%;
+        right: 10%;
+        height: 100px;
+        width: 100px;
+        animation: move_top 3s infinite linear;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        @include desktop{
+            display: none;
+        }
+    }
+    @include desktop{
+        padding: 120px 0 0;
+    }
+    &__title{
+        font-size: 48px;
+        font-family: $primary-font;
+        color: $secondary-color;
+        line-height: 1;
+        margin: 0 0 30px 0;
+        @include tablet{
+            font-size: 36px;
+        }
+        @include mobile{
+            font-size: 30px;
+        }
+    }
+    .breadcrumb{
+        background: none;
+        margin: 0;
+        padding: 0;
+        &-item{
+            a{
+                font-family: $secondary-font;
+                color: $secondary-color;
+                font-size: 17px;
+                text-decoration: none;
+                @include mobile{
+                    font-size: 14px;
+                }
+                @include mobile-xs{
+                    font-size: 12px;
+                }
+            }
+            &.active{
+                font-family: $secondary-font;
+                color: $secondary-color;
+                @include mobile{
+                    font-size: 14px;
+                }
+                @include mobile-xs{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .breadcrumb-item+.breadcrumb-item::before{
+        content: '-';
+        color: $secondary-color;
+        font-size: 17px;
+        padding-right: 10px;
+        @include mobile{
+            font-size: 14px;
+        }
+        @include mobile-xs{
+            padding-right: 0px;
+        }
+    }
+    .breadcrumb-item+.breadcrumb-item{
+        padding-left: 10px;
+        @include mobile-xs{
+            padding-right: 0px;
+        }
+    }
+}

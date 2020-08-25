@@ -1,0 +1,202 @@
+.case-details {
+  padding: 200px 0 100px 0;
+  .svg-img {
+    position: absolute;
+    top: 30%;
+    left: -7%;
+    animation: move_top 5s infinite linear;
+    @include desktop {
+      display: none;
+    }
+  }
+  .animate-shape {
+    position: absolute;
+    top: 29%;
+    right: 4%;
+    height: 300px;
+    width: 300px;
+    svg {
+      width: 100%;
+    }
+    @include desktop {
+      display: none;
+    }
+  }
+  .animate-pattern {
+    position: absolute;
+    top: 46%;
+    right: 12%;
+    height: 100px;
+    width: 100px;
+    animation: move_top 3s infinite linear;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+    @include desktop {
+      display: none;
+    }
+  }
+  &-title {
+    font-size: 50px;
+    line-height: 60px;
+    font-family: $primary-font;
+    color: $secondary-color;
+    margin: 0 0 50px 0;
+  }
+  p {
+    font-family: $secondary-font;
+    color: #7e7e8a;
+    font-size: 16px;
+    line-height: 34px;
+    margin: 0 0 30px 0;
+  }
+  &-info {
+    display: flex;
+    justify-content: space-around;
+    background: $secondary-color;
+    border-radius: 20px;
+    padding: 65px 0;
+    margin: 70px 0 80px 0;
+    @include mobile {
+      flex-direction: column;
+      padding: 30px 0;
+    }
+    .case-details-info-item {
+      position: relative;
+      &:not(:last-child) {
+        &::before {
+          position: absolute;
+          content: "";
+          width: 1px;
+          height: 100%;
+          top: 0;
+          right: -80px;
+          background: rgba($color: $white, $alpha: 0.1);
+          @include desktop {
+            right: -45px;
+          }
+          @include tablet {
+            right: -15px;
+          }
+          @include mobile {
+            display: none;
+          }
+        }
+        @include mobile {
+          margin-bottom: 30px;
+        }
+      }
+    }
+    h5 {
+      margin: 0 0 10px 0;
+      font-size: 20px;
+      color: $white;
+      font-family: $primary-font;
+    }
+    p {
+      margin: 0;
+    }
+  }
+  &-service {
+    margin-bottom: 90px;
+    h3 {
+      font-family: $primary-font;
+      color: $secondary-color;
+      font-size: 25px;
+      margin: 0 0 25px 0;
+    }
+    p {
+      margin: 0;
+    }
+  }
+  &-thumb {
+    margin: 0 0 90px 0;
+    border-radius: 30px;
+    overflow: hidden;
+    img {
+      height: 100%;
+      max-width: 100%;
+      border-radius: 20px;
+    }
+  }
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    .previous,
+    .next {
+      .icon {
+        line-height: 0;
+      }
+      .content {
+        span {
+          display: block;
+          font-family: $secondary-font;
+          color: #7e7e8a;
+          font-size: 15px;
+          line-height: 1;
+          margin-bottom: 5px;
+        }
+        h5 {
+          font-family: $primary-font;
+          font-size: 20px;
+          margin: 0;
+          line-height: 1;
+          a {
+            text-decoration: none;
+            color: $secondary-color;
+            transition: all 0.3s ease;
+            &:hover {
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+    .previous {
+      display: flex;
+      align-items: center;
+      .icon {
+        margin-right: 15px;
+      }
+    }
+    .social {
+      @include mobile {
+        display: none;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          list-style: none;
+          display: inline-block;
+          a {
+            display: block;
+            text-decoration: none;
+            color: #7e7e8a;
+            font-size: 20px;
+            transition: all 0.3s ease;
+            &:hover {
+              color: $primary-color;
+            }
+          }
+          &:not(:last-child) {
+            margin-right: 25px;
+          }
+        }
+      }
+    }
+    .next {
+      display: flex;
+      align-items: center;
+      .icon {
+        margin-left: 15px;
+      }
+      .content {
+        text-align: right;
+      }
+    }
+  }
+}

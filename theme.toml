@@ -1,0 +1,12 @@
+name = "Portio"
+license = "MIT"
+licenselink = "https://github.com/StaticMania/portio-hugo/blob/master/LICENSE"
+description = "Portio is a simple, minimal and responsive Portfolio Hugo Theme. Portio is well organized, well-formatted and named accordingly so it’s easy to change any and all of the design. Portio is built with Bootstrap 4. You can customize it very easy to fit your needs."
+homepage = "https://portio-hugo.staticmania.com/"
+tags = ["clean", "minimal", "blog", "responsive", "personal", "google analytics", "bootstrap", "portfolio", "white", "modern", "projects", "contact form", "creative"]
+features = ['bootstrap 4', 'responsive design', 'blog', 'responsive', 'minimal', 'business', 'hugo-theme', 'portfolio', 'creative', 'contact-form']
+min_version = "0.41"
+
+[author]
+  name = "Static Mania"
+  homepage = "https://staticmania.com/"

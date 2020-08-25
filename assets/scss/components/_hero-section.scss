@@ -1,0 +1,219 @@
+.hero {
+  padding: 200px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include desktop {
+    padding: 150px 0 30px 0;
+  }
+
+  &_background-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 65%;
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &_footer-svg {
+    position: absolute;
+    bottom: 20px;
+    left: -130px;
+    animation: move_top 5s infinite linear;
+    @include desktop {
+      display: none;
+    }
+  }
+  &_content {
+    position: relative;
+    @include desktop {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .hero_blob {
+      position: absolute;
+      z-index: -1;
+      top: -45%;
+      left: -45%;
+      height: 440px;
+      width: 440px;
+      svg {
+        width: 100%;
+        position: relative;
+      }
+      @include desktop {
+        display: none;
+      }
+    }
+    span {
+      font-size: 24px;
+      font-family: $secondary-font;
+      color: $secondary-color;
+      position: relative;
+      display: block;
+      margin: 0 0 20px 30px;
+      @include desktop {
+        display: inline-block;
+      }
+      &::before {
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 20px;
+        top: 50%;
+        left: -20px;
+        transform: translateX(-50%);
+        background: $secondary-color;
+      }
+    }
+    h1 {
+      margin: 0 0 30px 0;
+      font-size: 60px;
+      font-family: $primary-font;
+      color: $secondary-color;
+      line-height: 70px;
+    }
+    p {
+      margin: 0 0 50px 0;
+      font-family: $secondary-font;
+      color: $secondary-color;
+      font-size: 20px;
+      line-height: 30px;
+    }
+    a {
+      display: inline-block;
+      padding: 20px 50px;
+      font-family: $secondary-font;
+      font-size: 16px;
+      background: $primary-color;
+      border-radius: 7px;
+      color: #ffffff;
+      text-decoration: none;
+      border: 1px solid transparent;
+      transition: all 0.3s ease;
+      transform: scale(1);
+      &:hover {
+        background: #425fee;
+        box-shadow: 0 8px 20px rgba(56, 87, 241, 0.3);
+        transform: scale(1.03);
+      }
+    }
+  }
+  &_figure {
+    width: 90%;
+    margin-left: auto;
+    border-radius: 20px;
+    position: relative;
+    @include desktop {
+      width: 100%;
+    }
+    .figure-svg {
+      position: absolute;
+      top: -55px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      z-index: -1;
+      height: 150px;
+      animation: move_left 5s infinite linear;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    img {
+      height: 100%;
+      width: 100%;
+    }
+    &-popup {
+      position: absolute;
+      bottom: 80px;
+      left: 0;
+      transform: translateX(-50%);
+      transition: all 0.3s ease;
+      @include desktop {
+        bottom: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .thumb {
+        height: 160px;
+        width: 250px;
+        border: 1px solid #707070;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        &::before {
+          position: absolute;
+          content: "";
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background: rgba(0, 0, 0, 0.6);
+          z-index: 1;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .popup-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 60px;
+        width: 60px;
+        background: #ffffff;
+        border-radius: 50%;
+        z-index: 2;
+        transition: all 0.3s ease;
+        svg {
+          position: absolute;
+          top: 50%;
+          left: 55%;
+          transform: translate(-50%, -50%);
+          transition: all 0.3s ease;
+        }
+        &:hover {
+          background-color: $primary-color;
+          svg {
+            path {
+              fill: #ffffff;
+            }
+          }
+        }
+      }
+      &:hover {
+        .popup-button {
+          transform: translate(-50%, -50%) scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+@keyframes move_left {
+  0% {
+    transform: translateX(-50%);
+  }
+  50% {
+    transform: translateX(-57%);
+  }
+}
+
+@keyframes move_top {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+}

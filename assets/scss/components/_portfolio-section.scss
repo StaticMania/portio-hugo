@@ -1,0 +1,105 @@
+.portfolio {
+  padding: 100px 0 135px 0;
+  @include desktop {
+    padding: 100px 0;
+  }
+  &__header {
+    margin-bottom: 80px;
+    @include tablet {
+      margin-bottom: 50px;
+    }
+    span {
+      display: block;
+      font-size: 20px;
+      font-family: $secondary-font;
+      margin: 0 0 30px 0;
+    }
+    h1 {
+      margin: 0 0 20px 0;
+      font-size: 55px;
+      font-family: $primary-font;
+      color: $secondary-color;
+      line-height: 1;
+      @include tablet {
+        font-size: 40px;
+      }
+    }
+  }
+  &-item {
+    width: 50%;
+    padding: 30px;
+    &:nth-child(4n-3) {
+      padding-right: 70px;
+    }
+    &:nth-child(4n-1) {
+      padding-left: 90px;
+    }
+    &-grid {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -30px;
+    }
+    &-thumb {
+      transition: 0.3s ease;
+      border-radius: 20px;
+      width: 100%;
+    }
+    &-content {
+      span {
+        font-family: $secondary-font;
+        color: #7e7e8a;
+        font-size: 18px;
+        line-height: 1;
+        display: block;
+        margin: 28px 0 20px 0;
+      }
+      h3 {
+        margin: 0 0 20px 0;
+        a {
+          font-family: $primary-font;
+          color: $secondary-color;
+          font-size: 25px;
+          line-height: 40px;
+          transition: all 0.3s ease;
+          display: block;
+          &:hover {
+            text-decoration: none;
+            color: $primary-color;
+          }
+        }
+      }
+      .see-more-btn {
+        text-decoration: none;
+        display: inline-block;
+        font-family: $secondary-font;
+        color: $primary-color;
+        position: relative;
+        font-size: 17px;
+        margin: 0 0 0 30px;
+        transform: scaleY(0);
+        transform-origin: bottom center;
+        transition: all 0.3s ease;
+        &::before {
+          position: absolute;
+          content: "";
+          height: 2px;
+          width: 20px;
+          background: $primary-color;
+          top: 50%;
+          left: -30px;
+          transform: translateY(-50%);
+        }
+      }
+    }
+    &:hover {
+      .portfolio-item-thumb {
+        box-shadow: 0px 20px 40px 0px rgba(50, 65, 141, 0.12);
+      }
+      .portfolio-item-content {
+        .see-more-btn {
+          transform: scaleY(1);
+        }
+      }
+    }
+  }
+}

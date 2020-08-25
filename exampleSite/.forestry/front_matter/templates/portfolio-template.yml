@@ -1,0 +1,36 @@
+---
+label: Portfolio Template
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Title
+- type: datetime
+  name: date
+  label: date
+- type: file
+  name: thumbnail
+  label: thumbnail
+- type: text
+  name: type
+  label: type
+- type: text
+  name: service
+  label: service
+- type: text
+  name: client
+  label: client
+- type: textarea
+  name: shortDescription
+  label: shortDescription
+- type: textarea
+  name: challenge
+  label: challenge
+- type: textarea
+  name: solution
+  label: solution
+pages:
+- content/portfolio/UX-case-study-for-agriculture-app.md
+- content/portfolio/case-study-one.md
+- content/portfolio/event-app-case-study.md
+- content/portfolio/recipe-app-ux-study.md

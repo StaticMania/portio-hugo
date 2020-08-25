@@ -1,0 +1,36 @@
+<head>
+  <meta charset="utf-8" />
+  <title>{{ .Title }}</title>
+
+  {{ "<!-- mobile responsive meta -->" | safeHTML }}
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  {{ "<!-- Slick Carousel -->" | safeHTML }} 
+  <link rel="stylesheet" href="{{ "plugins/slick/slick.css" | absURL }}" />
+  <link rel="stylesheet" href="{{ "plugins/slick/slick-theme.css" | absURL }}" />
+  {{ "<!-- Font Awesome -->" | safeHTML }}
+  <link rel="stylesheet" href="{{ "plugins/font-awesome/css/font-awesome.min.css" | absURL }}" />
+  {{ "<!-- Bootstrap -->" | safeHTML }}
+  <link rel="stylesheet" href="{{"plugins/bootstrap/bootstrap.min.css" | absURL }}" />
+  <link rel="stylesheet" href="{{"plugins/magnafic-popup/magnific-popup.css" | absURL }}" />
+
+  {{ "<!-- Stylesheets -->" | safeHTML }}
+  {{ $style := resources.Get "scss/style.scss" | resources.ToCSS | minify }}
+  <link href="{{ $style.Permalink }}" rel="stylesheet" />
+
+  {{ "<!--Favicon-->" | safeHTML }}
+  <link rel="shortcut icon" href="{{ "images/favicon.ico" | absURL }}" type="image/x-icon" />
+  <link rel="icon" href="{{ "images/favicon.png" | absURL }}" type="image/x-icon" />
+  {{ with site.Params.googleAnalytics }}
+  {{ "<!-- Google Analytics -->" | safeHTML }}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '{{ . }}');
+  </script>
+	{{ end }}
+</head>

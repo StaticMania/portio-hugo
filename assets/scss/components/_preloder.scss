@@ -1,0 +1,55 @@
+.preloader-wrap {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background: $white;
+    z-index: 2000;
+    text-align: center;
+	height: 100vh;
+	.inner{
+		position: absolute;
+		height: 170px;
+		width: 170px;
+		left: 50%;
+		top: 50%;
+		transform: translate( -50%, -50% );
+		border: 1px solid $primary-color;
+		border-top: 5px solid $primary-color;
+		border-radius: 50%;
+		animation: spin 1s infinite linear;
+		@include desktop{
+			height: 150px;
+			width: 150px;
+		}
+	}
+	.percentage {
+		z-index: 100;
+		color: $primary-color;
+		opacity: 1;
+		font-weight: 600;
+		font-family: "bebasbold";
+		font-size: 60px;
+		letter-spacing: 5px;
+		line-height: 1;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		-webkit-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+		@include desktop{
+			font-size: 50px;
+		}
+	}
+}
+
+@keyframes spin{
+	0% {
+		transform: translate( -50%, -50% ) rotate(0);
+	}
+	100% {
+		transform: translate( -50%, -50% ) rotate(360deg);
+	}
+}
+  

@@ -1,0 +1,57 @@
+---
+label: Resume Template
+hide_body: true
+fields:
+- type: boolean
+  name: enable
+  label: enable
+- type: text
+  name: topTitle
+  label: topTitle
+- type: text
+  name: title
+  label: title
+- type: textarea
+  name: subtitle
+  label: subtitle
+- type: text
+  name: subsubtitle
+  label: subsubtitle
+- type: text
+  name: tab1Name
+  label: tab1Name
+- type: text
+  name: tab2Name
+  label: tab2Name
+- type: text
+  name: tab1Target
+  label: tab1Target
+- type: text
+  name: tab2Target
+  label: tab2Target
+- type: field_group_list
+  name: education
+  label: education
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: content
+    label: content
+  - type: text
+    name: time
+    label: time
+- type: field_group_list
+  name: experience
+  label: experience
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: content
+    label: content
+  - type: text
+    name: time
+    label: time

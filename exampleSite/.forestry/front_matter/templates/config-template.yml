@@ -1,0 +1,108 @@
+---
+label: Config Template
+hide_body: true
+fields:
+- type: text
+  name: baseURL
+  label: baseURL
+- type: text
+  name: languageCode
+  label: languageCode
+- type: text
+  name: title
+  label: Title
+- type: text
+  name: theme
+  label: theme
+- type: number
+  name: paginate
+  label: paginate
+- type: field_group
+  name: menu
+  label: menu
+  fields:
+  - type: field_group_list
+    name: main
+    label: main
+    fields:
+    - type: text
+      name: name
+      label: name
+    - type: text
+      name: url
+      label: url
+    - type: number
+      name: weight
+      label: weight
+  - type: field_group_list
+    name: sitemap
+    label: sitemap
+    fields:
+    - type: text
+      name: name
+      label: name
+    - type: text
+      name: url
+      label: url
+    - type: number
+      name: weight
+      label: weight
+- type: field_group
+  name: params
+  label: params
+  fields:
+  - type: text
+    name: blogPageURL
+    label: blogPageURL
+  - type: file
+    name: logo
+    label: logo
+  - type: file
+    name: footerLogo
+    label: footerLogo
+  - type: text
+    name: contactLink
+    label: contactLink
+  - type: text
+    name: copyright
+    label: copyright
+  - type: text
+    name: googleAnalytics
+    label: googleAnalytics
+  - type: text
+    name: formspreeURL
+    label: formspreeURL
+  - type: field_group
+    name: address
+    label: address
+    fields:
+    - type: text
+      name: phone
+      label: phone
+    - type: text
+      name: email
+      label: email
+    - type: text
+      name: address
+      label: address
+    - type: text
+      name: openingHours
+      label: openingHours
+  - type: field_group
+    name: map
+    label: map
+    fields:
+    - type: text
+      name: APIkey
+      label: APIkey
+    - type: text
+      name: latitude
+      label: latitude
+    - type: text
+      name: longitude
+      label: longitude
+    - type: file
+      name: pinImage
+      label: pinImage
+pages:
+- config.toml

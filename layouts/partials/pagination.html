@@ -1,0 +1,33 @@
+{{ $pag := $.Paginator }}
+{{ if gt $pag.TotalPages 1 }}
+    <div class="blog__pagination">
+        <div class="pagination">
+            {{ range $pag.Pagers }}
+                {{ if eq . $pag }}
+                    <li class="active">
+                      <a href="{{ .URL }}">{{ .PageNumber }}</a>
+                    </li>
+                {{ else }}
+                    <li>
+                      <a href="{{ .URL }}">{{ .PageNumber }}</a>
+                    </li>
+                {{ end }}
+            {{ end }}
+
+            {{ if $pag.HasNext }}
+            <li class="page-item">
+              <a href="{{ $pag.Next.URL }}" rel="next" class="page-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20.657" height="11.314" viewBox="0 0 20.657 11.314">
+                  <g fill="#fff" data-name="Group 12">
+                    <path d="M0 4.657h18v2H0z" data-name="Rectangle 2400"/>
+                    <path d="M13.586 9.9l5.6568542-5.6568542 1.4142136 1.4142135-5.6568542 5.6568543z" data-name="Rectangle 2401"/>
+                    <path d="M15 0l5.6568542 5.6568542-1.4142135 1.4142136-5.6568543-5.6568542z" data-name="Rectangle 2402"/>
+                  </g>
+                </svg>
+              </a>
+            </li>
+            {{ end }}
+        </div>
+    <!-- </nav> -->
+    </div>
+{{ end }}

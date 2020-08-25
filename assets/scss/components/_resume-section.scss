@@ -1,0 +1,150 @@
+.resume{
+    position: relative;
+    margin-bottom: 100px;
+    padding: 150px 0;
+    @include desktop{
+        margin-bottom: 40px;
+        padding: 100px 0;
+    }
+    &__background{
+        background: #1B2031;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: skewY(-2deg);
+    }
+    &__heading{
+        margin-right: 100px;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 150px;
+        @include desktop{
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
+        span{
+            font-size: 20px;
+            font-family: $secondary-font;
+            color: $white;
+            position: relative;
+            display: block;
+            margin: 0 0 20px 30px;
+            &::before{
+                position: absolute;
+                content: '';
+                height: 2px;
+                width: 20px;
+                top: 50%;
+                left: -20px;
+                transform: translateX(-50%);
+                background: $white;
+            }
+        }
+        h1{
+            margin: 0 0 30px 0;
+            font-size: 55px;
+            font-family: $primary-font;
+            color: $white;
+            line-height: 50px;
+        }
+        p{
+            margin: 0 0 0 0;
+            font-family: $secondary-font;
+            color: $white;
+            font-size: 18px;
+            line-height: 34px;
+        }
+        ul{
+            margin: 40px 0 0 0;
+            padding: 0;
+            &.nav-tabs{
+                border-bottom: none;
+            }
+            li{
+                list-style: none;
+                display: inline-block;
+                a{
+                    padding: 15px 40px;
+                    text-decoration: none;
+                    display: block;
+                    background: $white;
+                    color: $secondary-color;
+                    font-family: $secondary-font;
+                    font-size: 16px;
+                    transition: all .3s ease;
+                    @include mobile-s{
+                        padding: 15px 28px;
+                    }
+                    &:hover{
+                        background: #425FEE;
+                        color: $white;
+                        box-shadow: 0 8px 20px 0 rgba(56, 87, 241, 0.30);
+                    }
+                    &.active{
+                        background: $primary-color;
+                        color: $white;
+                        box-shadow: 0 8px 20px 0 rgba(56, 87, 241, 0.30);
+                        &:hover{
+                            background: #425FEE;
+                        }
+                    }
+                }
+                &:nth-child(1){
+                    a{
+                        border-radius: 7px 0 0 7px;
+                    }
+                }
+                &:nth-child(2){
+                    margin-left: -5px;
+                    a{
+                        border-radius: 0 7px 7px 0;
+                    }
+                }
+            }
+        }
+    }
+    &__education{
+        &_item{
+            background: $white;
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0px 20px 40px 0px rgba(50, 65, 141, 0.12);
+            span{
+                color: $primary-color;
+                display: block;
+                font-size: 16px;
+                font-family: $secondary-font;
+                margin: 0 0 20px 30px;
+                position: relative;
+                line-height: 1;
+                &::before{
+                    position: absolute;
+                    content: '';
+                    height: 2px;
+                    width: 20px;
+                    top: 50%;
+                    left: -20px;
+                    transform: translateX(-50%);
+                    background: $secondary-color;
+                }
+            }
+            h4{
+                font-size: 25px;
+                font-family: $primary-font;
+                color: $secondary-color;
+                margin: 0 0 30px 0;
+                line-height: 1;
+            }
+            p{
+                line-height: 34px;
+                font-family: $secondary-font;
+                color: #7E7E8A;
+                font-size: 16px;
+                margin: 0;
+            }
+        }
+    }
+}

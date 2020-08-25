@@ -1,0 +1,51 @@
+{{ with .Site.Data.resumeSection }}
+    {{ if .enable }}
+        <section class="section resume" id="resume">
+            <div class="resume__background"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="resume__heading">
+                            <span>{{ .topTitle }}</span>
+                            <h1>{{ .title }}</h1>
+                            <p> {{ .subtitle }} </p><br><br>
+                            <p> {{ .subsubtitle }} </p>
+                            <ul class="nav nav-tabs">
+                                <li><a href="#{{.tab1Target}}" class="active" data-toggle="tab">{{ .tab1Name }}</a></li>
+                                <li><a href="#{{.tab2Target}}" data-toggle="tab">{{ .tab2Name }}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="tab-content ">
+                            <div class="resume__education tab-pane active" id="{{.tab1Target}}">
+                                {{ $Section := .education }}
+                                {{ range $Section }}
+                                    <div class="resume__education_item">
+                                        <span> {{ .time }} </span>
+                                        <h4> {{ .title }} </h4>
+                                        <p> {{ .content }} </p>
+                                    </div>
+                                {{ end }}
+                            
+                            </div>
+
+                            <div class="resume__education tab-pane" id="{{.tab2Target}}">
+                                {{ $Section := .experience }}
+                                {{ range $Section }}
+                                    <div class="resume__education_item">
+                                        <span> {{ .time }} </span>
+                                        <h4> {{ .title }} </h4>
+                                        <p> {{ .content }} </p>
+                                    </div>
+                                {{ end }}   
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {{ end }}
+{{ end }}
+        

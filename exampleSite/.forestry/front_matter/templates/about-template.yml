@@ -1,0 +1,36 @@
+---
+label: About Template
+hide_body: true
+fields:
+- type: boolean
+  name: enable
+  label: enable
+- type: text
+  name: title
+  label: title
+- type: text
+  name: subtitle
+  label: subtitle
+- type: text
+  name: title2
+  label: title2
+- type: textarea
+  name: content
+  label: content
+- type: text
+  name: button1Name
+  label: button1Name
+- type: text
+  name: button2Name
+  label: button2Name
+- type: text
+  name: button1Target
+  label: button1Target
+- type: text
+  name: button2Target
+  label: button2Target
+- type: file
+  name: image
+  label: image
+pages:
+- data/aboutSection.yml

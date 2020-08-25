@@ -1,0 +1,142 @@
+.skill {
+  position: relative;
+  padding: 100px 0 150px 0;
+  @include desktop {
+    padding: 100px 0;
+  }
+  &__background_shape {
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    height: 300px;
+    width: 300px;
+    svg {
+      width: 100%;
+    }
+    @include desktop {
+      display: none;
+    }
+  }
+  &__background_pattern {
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+    height: 100px;
+    width: 100px;
+    animation: move_top 3s infinite linear;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+    @include desktop {
+      display: none;
+    }
+  }
+  &__thumb {
+    position: relative;
+    @include tablet {
+      margin-bottom: 30px;
+    }
+    &_pattern {
+      position: absolute;
+      top: -11%;
+      left: -17%;
+      z-index: -1;
+      height: 150px;
+      animation: move_top 4s infinite linear;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    &_image {
+      margin-right: 7%;
+      @include desktop {
+        margin-right: 0;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+  &__progress {
+    margin-left: 40px;
+    @include desktop {
+      margin-left: 0;
+      margin-top: 30px;
+    }
+    &_heading {
+      margin-bottom: 40px;
+      span {
+        font-size: 20px;
+        font-family: $secondary-font;
+        color: $secondary-color;
+        position: relative;
+        display: block;
+        margin: 0 0 20px 30px;
+        &::before {
+          position: absolute;
+          content: "";
+          height: 2px;
+          width: 20px;
+          top: 50%;
+          left: -20px;
+          transform: translateX(-50%);
+          background: $secondary-color;
+        }
+      }
+      h1 {
+        margin: 0 0 30px 0;
+        font-size: 50px;
+        font-family: $primary-font;
+        color: $secondary-color;
+        line-height: 50px;
+      }
+      p {
+        margin: 0 0 0 0;
+        font-family: $secondary-font;
+        color: $secondary-color;
+        font-size: 18px;
+        line-height: 26px;
+      }
+    }
+    &_item {
+      &.js-animation {
+        transition: all 0.3s ease;
+        .progress {
+          width: 100%;
+          background: #e7eef2;
+          height: 10px;
+          border-radius: 5px;
+          .progress-bar {
+            border-radius: 5px;
+            position: relative;
+            animation: animate-positive 3000ms;
+            background: #5d78ff;
+          }
+        }
+      }
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+      h6 {
+        display: inline-block;
+        font-family: $secondary-font;
+        font-weight: 400;
+        font-size: 16px;
+      }
+      .progress-value {
+        float: right;
+        font-family: $secondary-font;
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+@keyframes animate-positive {
+  0% {
+    width: 0;
+  }
+}

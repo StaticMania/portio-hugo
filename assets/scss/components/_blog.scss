@@ -1,0 +1,128 @@
+.blog {
+  &__item {
+    position: relative;
+    margin-bottom: 120px;
+    &-thumb {
+      width: 90%;
+      height: 100%;
+      @include desktop {
+        width: 80%;
+        margin: 0 auto;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+      }
+    }
+    &-content {
+      background: #ffffff;
+      position: absolute;
+      bottom: -100px;
+      left: 40px;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0px 20px 40px 0px rgba(50, 65, 141, 0.12);
+      @include desktop {
+        left: 0;
+      }
+      span {
+        font-size: 16px;
+        font-family: $secondary-font;
+        color: $primary-color;
+        margin: 0 0 20px 40px;
+        position: relative;
+        display: block;
+        line-height: 1;
+        &::before {
+          position: absolute;
+          content: "";
+          top: 50%;
+          left: -40px;
+          height: 1px;
+          width: 20px;
+          background: #282f49;
+          transform: translateY(-50%);
+        }
+      }
+      a {
+        font-size: 22px;
+        font-family: $primary-font;
+        line-height: 30px;
+        color: $secondary-color;
+        margin: 0;
+        display: block;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+  &__pagination {
+    width: 100%;
+    position: relative;
+    height: 80px;
+    margin-top: 40px;
+    .pagination {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      li {
+        a {
+          transition: all 0.3s ease;
+          border-radius: 10px !important;
+          box-shadow: 0 20px 40px 0 rgba(50, 65, 141, 0.12);
+          height: 80px;
+          width: 80px;
+          text-decoration: none;
+          font-family: $primary-font;
+          font-size: 20px;
+          color: $secondary-color;
+          transition: all 0.3s ease;
+          display: inline-block;
+          text-align: center;
+          line-height: 80px;
+          position: relative;
+          border: none;
+          svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            path {
+              fill: #000;
+            }
+          }
+        }
+        &:hover {
+          a {
+            background: $primary-color;
+            color: $white;
+            svg {
+              path {
+                fill: $white;
+              }
+            }
+          }
+        }
+        &:not(:last-child) {
+          margin-right: 34px;
+        }
+        &.active {
+          a {
+            background: $primary-color;
+            color: $white;
+            svg {
+              path {
+                fill: $white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

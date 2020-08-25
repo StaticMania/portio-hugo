@@ -1,0 +1,18 @@
+---
+label: Blog Template
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Title
+- type: datetime
+  name: date
+  label: date
+- type: file
+  name: featureImage
+  label: featureImage
+- type: file
+  name: postImage
+  label: postImage
+pages:
+- content/blog/you-must-know-this-before-becoming-a-designer.md

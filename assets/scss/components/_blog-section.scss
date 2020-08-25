@@ -1,0 +1,175 @@
+.blog{
+    position: relative;
+    margin-bottom: 30px;
+    &__shape{
+        position: absolute;
+        top: 11%;
+        right: 12%;
+        height: 300px;
+        width: 300px;
+        img{
+            animation: rotate 25s infinite linear;
+            height: 100%;
+            width: 100%;
+        }
+        @include desktop{
+            display: none;
+        }
+    }
+    &__header{
+        span{
+            font-size: 20px;
+            font-family: $secondary-font;
+            color: $secondary-color;
+            position: relative;
+            display: block;
+            margin: 0 0 20px 30px;
+            &::before{
+                position: absolute;
+                content: '';
+                height: 2px;
+                width: 20px;
+                top: 50%;
+                left: -20px;
+                transform: translateX(-50%);
+                background: $secondary-color;
+            }
+        }
+        h1{
+            margin: 0 0 30px 0;
+            font-size: 50px;
+            font-family: $primary-font;
+            color: $secondary-color;
+            line-height: 50px;
+        }
+        p{
+            margin: 0 0 0 0;
+            font-family: $secondary-font;
+            color: $secondary-color;
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+    &__header_button{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        a{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            display: inline-block;
+            padding: 15px 40px;
+            background: #fff;
+            border: 1px solid #E4E6EB;
+            border-radius: 7px;
+            font-family: $secondary-font;
+            text-decoration: none;
+            font-size: 17px;
+            color: #282F49;
+            transition: all .3s ease;
+            transform: scale(1);
+            @include desktop{
+                position: relative;
+                margin-top: 30px;
+            }
+            &:hover{
+                background: $primary-color;
+                border: 1px solid transparent;
+                color: #fff;
+                transform: scale(1.03);
+                box-shadow: 0 8px 20px rgba(56, 87, 241, 0.3);
+            }
+        }
+    }
+    &__item{
+        position: relative;
+        margin-bottom: 20px;
+        @include desktop{
+            margin-bottom: 130px;
+        }
+        &-thumb{
+            width: 90%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 20px;
+            @include desktop{
+                width: 80%;
+                margin: 0 auto;
+            }
+            img{
+                height: 100%;
+                width: 100%;
+                transition: all .3s ease;
+            }
+        }
+        &-content{
+            background: #ffffff;
+            position: absolute;
+            bottom: -100px;
+            left: 40px;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0px 20px 40px 0px rgba(50,65,141,0.12);
+            @include desktop{
+                left: 0;
+            }
+            span{
+                font-size: 16px;
+                font-family: $secondary-font;
+                color: $primary-color;
+                margin: 0 0 20px 40px;
+                position: relative;
+                display: block;
+                line-height: 1;
+                &::before{
+                    position: absolute;
+                    content: '';
+                    top: 50%;
+                    left: -40px;
+                    height: 1px;
+                    width: 20px;
+                    background: #282F49;
+                    transform: translateY(-50%);
+                }
+            }
+            a{
+                font-size: 22px;
+                font-family: $primary-font;
+                line-height: 30px;
+                color: $secondary-color;
+                margin: 0;
+                display: block;
+                text-decoration: none;
+                transition: all .3s ease;
+                &:hover{
+                    color: $primary-color;
+                }
+            }
+        }
+        &:hover{
+            .blog__item-thumb img{
+                transform: scale(1.1);
+            }
+        }
+    }
+    .mobile{
+        display: none;
+    }
+    @include desktop {
+        .desktop{
+            display: none;
+        }
+        .mobile{
+            display: block;
+            text-align: center;
+        }
+    }
+}
+@keyframes rotate{
+    from { 
+        -webkit-transform: rotate(0deg); 
+    } to { 
+        -webkit-transform: rotate(360deg); 
+    }
+}

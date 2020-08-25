@@ -1,0 +1,33 @@
+---
+label: Hero Template
+hide_body: true
+fields:
+- type: boolean
+  name: enable
+  label: enable
+- type: text
+  name: title
+  label: title
+- type: text
+  name: subtitle
+  label: subtitle
+- type: text
+  name: description
+  label: description
+- type: text
+  name: buttonName
+  label: buttonName
+- type: text
+  name: buttonURL
+  label: buttonURL
+- type: file
+  name: image
+  label: image
+- type: file
+  name: videoThumb
+  label: videoThumb
+- type: text
+  name: videoURL
+  label: videoURL
+pages:
+- data/hero.yml
