@@ -6,14 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-  {{ "<!-- Slick Carousel -->" | safeHTML }} 
+  {{ "<!-- Slick Carousel -->" | safeHTML }}
   <link rel="stylesheet" href="{{ "plugins/slick/slick.css" | absURL }}" />
   <link rel="stylesheet" href="{{ "plugins/slick/slick-theme.css" | absURL }}" />
   {{ "<!-- Font Awesome -->" | safeHTML }}
   <link rel="stylesheet" href="{{ "plugins/font-awesome/css/font-awesome.min.css" | absURL }}" />
-  {{ "<!-- Bootstrap -->" | safeHTML }}
-  <link rel="stylesheet" href="{{"plugins/bootstrap/bootstrap.min.css" | absURL }}" />
-  <link rel="stylesheet" href="{{"plugins/magnafic-popup/magnific-popup.css" | absURL }}" />
 
   {{ "<!-- Stylesheets -->" | safeHTML }}
   {{ $style := resources.Get "scss/style.scss" | resources.ToCSS | minify }}
@@ -27,10 +24,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', '{{ . }}');
   </script>
-	{{ end }}
+  {{ end }}
 </head>
