@@ -1,8 +1,10 @@
 ---
 enable: true
-title: Hello, I am Natasha
-subtitle: I am here for your personal business
-description: Enjoy team diversity and increase their networks among others people
+topTitle: Hello, I am Natasha
+content: >
+  # I am here for your personal business
+
+  Enjoy team diversity and increase their networks among others people
   in various fields by
 buttonName: Contact me
 buttonURL: contact
