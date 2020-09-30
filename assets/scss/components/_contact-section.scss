@@ -112,22 +112,22 @@
             }
             a{
                 float: right;
-                color: $primary-color;
-                padding: 15px 40px;
-                background: #fff;
-                display: inline-block;
-                text-decoration: none;
-                font-family: $secondary-font;
-                border-radius: 7px;
-                font-size: 16px;
-                transition: all .3s ease;
+                // color: $primary-color;
+                // padding: 15px 40px;
+                // background: #fff;
+                // display: inline-block;
+                // text-decoration: none;
+                // font-family: $secondary-font;
+                // border-radius: 7px;
+                // font-size: 16px;
+                // transition: all .3s ease;
                 @include desktop{
                     float: none;
                 }
-                &:hover{
-                    background: #768bf3;
-                    color: #fff;
-                }
+                // &:hover{
+                //     background: #768bf3;
+                //     color: #fff;
+                // }
             }
         }
     }

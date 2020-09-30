@@ -30,25 +30,42 @@
     //     }
     // }
 
+// Button Override
 .btn {
   display: inline-block;
   padding: 15px 30px;
   font-family: $secondary-font;
   font-size: 16px;
-  background: $primary-color;
+  // background: $primary-color;
   border-radius: 7px;
-  color: #fff;
-  text-decoration: none;
-  border: 1px solid transparent;
-  transition: all 0.3s ease;
-  transform: scale(1);
-  &:hover {
-    background: #425fee;
-    box-shadow: 0 8px 20px rgba(56, 87, 241, 0.3);
-    transform: scale(1.03);
-  }
+  //color: #fff;
+  // ext-decoration: none;
+  // border: 1px solid transparent;
+  // transition: all 0.3s ease;
+  // transform: scale(1);
+  // &:hover {
+  //   background: #425fee;
+  //   box-shadow: 0 8px 20px rgba(56, 87, 241, 0.3);
+  //   transform: scale(1.03);
+  // }
 }
 
 .btn-lg {
   padding: 20px 50px;
+}
+
+.btn-light {
+  color: $primary;
+  &:hover {
+    color: $primary;
+  }
+}
+
+.btn-zoom {
+  transition: all 0.3s ease;
+  transform: scale(1);
+  &:hover {
+    box-shadow: 0 8px 20px rgba(56, 87, 241, 0.3);
+    transform: scale(1.03);
+  }
 }

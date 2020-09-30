@@ -8,9 +8,11 @@
                 <div class="resume__heading">
                     <span>{{ .topTitle }}</span>
                     {{ .content | markdownify }}
-                    <ul class="nav nav-tabs">
-                        <li><a href="#{{.tab1Target}}" class="active" data-toggle="tab">{{ .tab1Name }}</a></li>
-                        <li><a href="#{{.tab2Target}}" data-toggle="tab">{{ .tab2Name }}</a></li>
+                    <ul class="btn-group nav nav-tabs">
+                        <li><a href="#{{.tab1Target}}" class="btn btn-primary active"
+                                data-toggle="tab">{{ .tab1Name }}</a></li>
+                        <li><a href="#{{.tab2Target}}" class="btn btn-primary" data-toggle="tab">{{ .tab2Name }}</a>
+                        </li>
                     </ul>
                 </div>
             </div>

@@ -42,8 +42,12 @@
                         </div>
                         {{ .content | markdownify}}
                         <ul>
-                            <li><a class="active" href="{{ .button1Target | absURL }}">{{ .button1Name }}</a></li>
-                            <li><a href="{{ .button2Target | absURL }}"> {{ .button2Name }} </a></li>
+                            <li><a class="btn btn-primary btn-zoom"
+                                    href="{{ .button1Target | absURL }}">{{ .button1Name }}</a>
+                            </li>
+                            <li><a class="btn btn-outline-primary btn-zoom" href="{{ .button2Target | absURL }}">
+                                    {{ .button2Name }} </a>
+                            </li>
                         </ul>
                     </div>
                 </div>

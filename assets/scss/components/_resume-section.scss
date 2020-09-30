@@ -65,32 +65,32 @@
             li{
                 list-style: none;
                 display: inline-block;
-                a{
-                    padding: 15px 40px;
-                    text-decoration: none;
-                    display: block;
-                    background: $white;
-                    color: $secondary-color;
-                    font-family: $secondary-font;
-                    font-size: 16px;
-                    transition: all .3s ease;
-                    @include mobile-s{
-                        padding: 15px 28px;
-                    }
-                    &:hover{
-                        background: #425FEE;
-                        color: $white;
-                        box-shadow: 0 8px 20px 0 rgba(56, 87, 241, 0.30);
-                    }
-                    &.active{
-                        background: $primary-color;
-                        color: $white;
-                        box-shadow: 0 8px 20px 0 rgba(56, 87, 241, 0.30);
-                        &:hover{
-                            background: #425FEE;
-                        }
-                    }
-                }
+                // a {
+                //     padding: 15px 40px;
+                //     text-decoration: none;
+                //     display: block;
+                //     background: $white;
+                //     color: $secondary-color;
+                //     font-family: $secondary-font;
+                //     font-size: 16px;
+                //     transition: all .3s ease;
+                //     @include mobile-s{
+                //         padding: 15px 28px;
+                //     }
+                //     &:hover{
+                //         background: #425FEE;
+                //         color: $white;
+                //         box-shadow: 0 8px 20px 0 rgba(56, 87, 241, 0.30);
+                //     }
+                //     &.active{
+                //         background: $primary-color;
+                //         color: $white;
+                //         box-shadow: 0 8px 20px 0 rgba(56, 87, 241, 0.30);
+                //         &:hover{
+                //             background: #425FEE;
+                //         }
+                //     }
+                // }
                 &:nth-child(1){
                     a{
                         border-radius: 7px 0 0 7px;
