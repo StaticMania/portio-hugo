@@ -1,5 +1,5 @@
 {{ with .Site.Data.blogSection }}
-    {{ if .enable }}
+{{ if .enable }}
 <section class="section blog" id="blog">
   <div class="blog__shape">
     <img src="images/blog/blog-shape.svg" alt="blog shape" />
@@ -9,13 +9,12 @@
       <div class="col-lg-6">
         <div class="blog__header">
           <span>{{ .topTitle }}</span>
-          <h1> {{ .title }} </h1>
-          <p> {{ .subtitle }} </p>
+          {{ .content | markdownify }}
         </div>
       </div>
       <div class="col-lg-6">
         <div class="blog__header_button desktop">
-          <a href="{{ .buttonTarget | absURL }}">See all post</a>
+          <a class="btn btn-outline-secondary btn-zoom" href="{{ .buttonTarget | absURL }}">See all post</a>
         </div>
       </div>
     </div>
@@ -34,12 +33,12 @@
         </div>
       </div>
       {{ end }}
-      
+
     </div>
     <div class="row">
       <div class="col-lg-12">
         <div class="blog__header_button mobile">
-          <a href="{{ .buttonTarget | absURL }}">See all post</a>
+          <a class="btn btn-outline-secondary btn-zoom" href="{{ .buttonTarget | absURL }}">See all post</a>
         </div>
       </div>
     </div>

@@ -1,8 +1,11 @@
 ---
 enable: true
 topTitle: My Skills
-title: Why hire me for your next project?
-subtitle: My goal is to build a strong supportive professional network among all freelancers and startups in order to improve their performance.
+content: >
+  # Why hire me for your next project?
+
+  My goal is to build a strong supportive professional network among all freelancers and startups in order to improve their performance.
+
 image: images/skill/skill_image.jpg
 
 skill:

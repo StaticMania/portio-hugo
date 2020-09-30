@@ -39,8 +39,7 @@
                 <div class="skill__progress">
                     <div class="skill__progress_heading">
                         <span>{{ .topTitle }}</span>
-                        <h1> {{ .title }} </h1>
-                        <p> {{ .subtitle }} </p>
+                        {{ .content | markdownify }}
                     </div>
                     {{ $section := .skill }}
                     {{ range $section }}
