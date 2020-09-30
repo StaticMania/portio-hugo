@@ -41,27 +41,27 @@
         }
     }
     
-    .hire_button{
-        background: $primary_color;
-        padding: 15px 30px;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 7px;
-        font-size: 16px;
-        font-family: $secondary-font;
-        font-weight: 400;
-        border: 1px solid transparent;
-        transition: all .3s ease;
-        transform: scale(1);
-        &:hover{
-            background: #425FEE;
-            box-shadow: 0 8px 20px rgba(56, 87, 241, 0.3);
-            transform: scale(1.03);
-        }
-        @include desktop{
-            text-align: center;
-        }
-    }
+    // .hire_button{
+    //     background: $primary_color;
+    //     padding: 15px 30px;
+    //     color: #fff;
+    //     text-decoration: none;
+    //     border-radius: 7px;
+    //     font-size: 16px;
+    //     font-family: $secondary-font;
+    //     font-weight: 400;
+    //     border: 1px solid transparent;
+    //     transition: all .3s ease;
+    //     transform: scale(1);
+    //     &:hover{
+    //         background: #425FEE;
+    //         box-shadow: 0 8px 20px rgba(56, 87, 241, 0.3);
+    //         transform: scale(1.03);
+    //     }
+    //     @include desktop{
+    //         text-align: center;
+    //     }
+    // }
     
     &.nav__color__change{
         background: $white;

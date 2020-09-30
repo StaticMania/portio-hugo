@@ -70,20 +70,20 @@
         background: $secondary-color;
       }
     }
-    // h1 {
-    //   margin: 0 0 30px 0;
-    //   font-size: 60px;
-    //   font-family: $primary-font;
-    //   color: $secondary-color;
-    //   line-height: 70px;
-    // }
-    // p {
-    //   margin: 0 0 50px 0;
-    //   font-family: $secondary-font;
-    //   color: $secondary-color;
-    //   font-size: 20px;
-    //   line-height: 30px;
-    // }
+    h1 {
+      margin: 0 0 30px 0;
+      font-size: 60px;
+      font-family: $primary-font;
+      color: $secondary-color;
+      line-height: 70px;
+    }
+    p {
+      margin: 0 0 50px 0;
+      font-family: $secondary-font;
+      color: $secondary-color;
+      font-size: 20px;
+      line-height: 30px;
+    }
 
     // a {
     //   display: inline-block;
