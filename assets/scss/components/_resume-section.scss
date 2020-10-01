@@ -26,8 +26,6 @@
         }
         span{
             font-size: 20px;
-            font-family: $secondary-font;
-            color: $white;
             position: relative;
             display: block;
             margin: 0 0 20px 30px;
@@ -42,19 +40,11 @@
                 background: $white;
             }
         }
-        h1{
+        h2{
             margin: 0 0 30px 0;
-            font-size: 55px;
-            font-family: $primary-font;
-            color: $white;
-            line-height: 50px;
         }
         p{
-            margin: 0 0 0 0;
-            font-family: $secondary-font;
-            color: $white;
             font-size: 18px;
-            line-height: 34px;
         }
         ul{
             margin: 40px 0 0 0;
@@ -113,10 +103,8 @@
             margin-bottom: 30px;
             box-shadow: 0px 20px 40px 0px rgba(50, 65, 141, 0.12);
             span{
-                color: $primary-color;
+                color: $primary;
                 display: block;
-                font-size: 16px;
-                font-family: $secondary-font;
                 margin: 0 0 20px 30px;
                 position: relative;
                 line-height: 1;
@@ -132,17 +120,11 @@
                 }
             }
             h4{
-                font-size: 25px;
-                font-family: $primary-font;
-                color: $secondary-color;
                 margin: 0 0 30px 0;
                 line-height: 1;
             }
             p{
                 line-height: 34px;
-                font-family: $secondary-font;
-                color: #7E7E8A;
-                font-size: 16px;
                 margin: 0;
             }
         }

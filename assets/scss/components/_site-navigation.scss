@@ -17,52 +17,22 @@
             }
         }
     }
-    .main-navigation{
-        margin: 0 auto;
-        .nav-item{
-            .nav-link{
-                color: $secondary-color;
-                font-family: $secondary-font;
-                padding: 0 15px;
-                transition: all .3s ease;
-                font-weight: 500;
-                &:hover{
-                    color: $primary_color;
-                }
-                @include desktop{
-                    text-align: center;
-                    padding: 15px 0;
-                    cursor: pointer;
-                }
-            }
-            .active{
-                color: $primary_color;
-            }
-        }
-    }
-    
-    // .hire_button{
-    //     background: $primary_color;
-    //     padding: 15px 30px;
-    //     color: #fff;
-    //     text-decoration: none;
-    //     border-radius: 7px;
-    //     font-size: 16px;
-    //     font-family: $secondary-font;
-    //     font-weight: 400;
-    //     border: 1px solid transparent;
-    //     transition: all .3s ease;
-    //     transform: scale(1);
-    //     &:hover{
-    //         background: #425FEE;
-    //         box-shadow: 0 8px 20px rgba(56, 87, 241, 0.3);
-    //         transform: scale(1.03);
-    //     }
-    //     @include desktop{
-    //         text-align: center;
-    //     }
+    // .main-navigation{
+    //     // margin: 0 auto;
+    //     // .nav-item{
+    //     //     .nav-link{
+    //     //         // @include desktop{
+    //     //         //     text-align: center;
+    //     //         //     padding: 15px 0;
+    //     //         //     cursor: pointer;
+    //     //         // }
+    //     //     }
+    //     //     .active{
+    //     //         color: $primary_color;
+    //     //     }
+    //     // }
     // }
-    
+
     &.nav__color__change{
         background: $white;
         padding: 20px 0;
@@ -113,4 +83,4 @@
             }
         }
     }
-    }
+}

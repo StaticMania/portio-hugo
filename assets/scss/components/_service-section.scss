@@ -55,22 +55,15 @@
                 background: $secondary-color;
             }
         }
-        h1{
+        h2{
             margin: 0 0 30px 0;
             font-size: 50px;
-            font-family: $primary-font;
-            color: $secondary-color;
-            line-height: 50px;
             @include tablet{
                 font-size: 39px;
             }
         }
         p{
-            margin: 0 0 0 0;
-            font-family: $secondary-font;
-            color: $secondary-color;
             font-size: 18px;
-            line-height: 26px;
         }
     }
     &__slider{
@@ -97,17 +90,7 @@
                 }
             }
             h4{
-                font-size: 24px;
-                font-family: $primary-font;
-                color: $secondary-color;
                 margin: 40px 0 30px 0;
-            }
-            p{
-                font-family: $secondary-font;
-                color: #7E7E8A;
-                font-size: 16px;
-                line-height: 30px;
-                margin: 0;
             }
         }
         .slick-list {

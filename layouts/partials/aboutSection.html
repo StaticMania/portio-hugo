@@ -6,7 +6,7 @@
             <div class="col-lg-6 offset-lg-3">
                 <div class="about_header">
                     <span>About</span>
-                    <h1> {{ .title }} </h1>
+                    <h2> {{ .title }} </h2>
                     <p> {{ .subtitle }} </p>
                 </div>
             </div>
@@ -40,7 +40,9 @@
                                 </g>
                             </svg>
                         </div>
-                        {{ .content | markdownify}}
+                        <div class="text-light">
+                            {{ .content | markdownify}}
+                        </div>
                         <ul>
                             <li><a class="btn btn-primary btn-zoom"
                                     href="{{ .button1Target | absURL }}">{{ .button1Name }}</a>

@@ -1,15 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900|Yeseva+One&display=swap');
 
+
+.base-font {
+    font-family: $font-family-base;
+}
+
+a.text-light, a.text-dark {
+    transition: all .3s ease;
+    &:hover{
+        color: $primary !important; // Yeah, I'm using "!important", what of it?
+    }
+}
+
+
 // body{
 //   font-family: $primary-font;
 //   font-size: 16px;
 //   color: $text-color;
 // }
 
-// h1, h2, h3, h4, h5, h6{
-//   font-family: $primary-font;
-//   font-weight: 600;
-//   color: $text-color-dark;
+// h1, .h1, h2, h3, h4, h5, h6{
+//   font-family: $font-family-header;
 // }
 
 // p{

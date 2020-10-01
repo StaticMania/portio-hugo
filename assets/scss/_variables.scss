@@ -15,5 +15,28 @@ $black: #000;
 $primary-font: 'Yeseva One', cursive;
 $secondary-font: 'Poppins', sans-serif;
 
+
+
+//
 // Bootstrap Variables
+//
+
+// Colors
 $primary: #5D78FF;
+
+// Typography
+$font-size-base: 1.125rem; // 18px
+
+$font-family-base: 'Poppins', sans-serif;
+$headings-font-family: 'Yeseva One', cursive;
+$h1-font-size:                60px;
+$h2-font-size:                50px;
+$h3-font-size:                30px;
+$h4-font-size:                25px;
+$h5-font-size:                25px;
+$h6-font-size:                15px;
+
+// $link-color:                              theme-color("primary") !default;
+// $link-decoration:                         none !default;
+// $link-hover-color:                        darken($link-color, 15%) !default;
+$link-hover-decoration:                   none;

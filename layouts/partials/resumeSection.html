@@ -6,8 +6,11 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="resume__heading">
-                    <span>{{ .topTitle }}</span>
-                    {{ .content | markdownify }}
+                    <div class="text-light">
+                        <span>{{ .topTitle }}</span>
+                        {{ .content | markdownify }}
+                    </div>
+
                     <ul class="btn-group nav nav-tabs">
                         <li><a href="#{{.tab1Target}}" class="btn btn-primary active"
                                 data-toggle="tab">{{ .tab1Name }}</a></li>

@@ -28,7 +28,9 @@
           </div>
           <div class="blog__item-content">
             <span>{{ .PublishDate.Format "January 2, 2006" }}</span>
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
+            <h4>
+              <a class="text-dark" href="{{ .Permalink }}">{{ .Title }}</a>
+            </h4>
           </div>
         </div>
       </div>

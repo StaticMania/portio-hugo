@@ -4,7 +4,7 @@
       <div class="col-lg-6 offset-lg-3">
         <div class="portfolio__header">
           <span>My Portfolio</span>
-          <h1>Check Some of Our Recent Work.</h1>
+          <h2>Check Some of Our Recent Work.</h2>
         </div>
       </div>
     </div>
@@ -17,9 +17,7 @@
             <div class="portfolio-item-content">
               <span>{{ .Params.service }}</span>
               <h3>
-                <a href="{{ .Permalink }}"
-                  >{{ .Title }}</a
-                >
+                <a class="text-dark" href="{{ .Permalink }}">{{ .Title }}</a>
               </h3>
               <a class="see-more-btn" href="{{ .Permalink }}">See details</a>
             </div>

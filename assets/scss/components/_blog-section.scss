@@ -19,8 +19,6 @@
     &__header{
         span{
             font-size: 20px;
-            font-family: $secondary-font;
-            color: $secondary-color;
             position: relative;
             display: block;
             margin: 0 0 20px 30px;
@@ -35,19 +33,11 @@
                 background: $secondary-color;
             }
         }
-        h1{
+        h2{
             margin: 0 0 30px 0;
-            font-size: 50px;
-            font-family: $primary-font;
-            color: $secondary-color;
-            line-height: 50px;
         }
         p{
             margin: 0 0 0 0;
-            font-family: $secondary-font;
-            color: $secondary-color;
-            font-size: 18px;
-            line-height: 26px;
         }
     }
     &__header_button{
@@ -116,8 +106,7 @@
             }
             span{
                 font-size: 16px;
-                font-family: $secondary-font;
-                color: $primary-color;
+                color: $primary;
                 margin: 0 0 20px 40px;
                 position: relative;
                 display: block;
@@ -131,19 +120,6 @@
                     width: 20px;
                     background: #282F49;
                     transform: translateY(-50%);
-                }
-            }
-            a{
-                font-size: 22px;
-                font-family: $primary-font;
-                line-height: 30px;
-                color: $secondary-color;
-                margin: 0;
-                display: block;
-                text-decoration: none;
-                transition: all .3s ease;
-                &:hover{
-                    color: $primary-color;
                 }
             }
         }

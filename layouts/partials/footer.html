@@ -22,9 +22,9 @@
                                 transform="translate(217.489 188.626)" />
                         </svg>
                     </div>
-                    <div class="contact__cta_content">
+                    <div class="text-light contact__cta_content">
                         <span>Contact me</span>
-                        <h1>Let’s Start a Project</h1>
+                        <h2>Let’s Start a Project</h2>
                     </div>
                     <div class="contact__cta_action">
                         <a class="btn btn-light btn-zoom" href="{{ .Site.Params.contactLink | absURL }}">Get in
@@ -40,26 +40,27 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="contact__widget_sitemap">
-                    <h3>Sitemap</h3>
-                    <ul>
+                <div class="text-light contact__widget_sitemap">
+                    <h4 class="base-font">Sitemap</h4>
+                    <ul class="fa-ul small ml-0 mt-4 mr-4 mb-4">
                         {{ $sitemap := .Site.Menus.sitemap }}
                         {{ range $sitemap }}
-                        <li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+                        <li class="mb-2 ml-0"><a class="text-light" href="{{ .URL | absURL }}">{{ .Name }}</a></li>
                         {{ end }}
                     </ul>
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="contact__widget_address">
-                    <h3>Address</h3>
+                <div class="text-light contact__widget_address">
+                    <h4 class="base-font">Address</h4>
                     {{ $address := .Site.Params.address }}
-                    <ul>
-                        <li><a href="tel:{{ $address.phone }}"><i class="fa fa-phone"></i>{{ $address.phone }}</a></li>
-                        <li><a href="mailto:{{ $address.email }}"><i class="fa fa-envelope"></i>{{ $address.email }}</a>
-                        </li>
-                        <li>
-                            <p><i class="fa fa-map-marker"></i>{{ $address.address }}</p>
+                    <ul class="fa-ul small m-4">
+                        <li class="mb-2"><a class="text-light" href="tel:{{ $address.phone }}"><span class="fa-li"><i
+                                        class="fa fa-phone"></i></span>{{ $address.phone }}</a></li>
+                        <li class="mb-2"><a class="text-light" href="mailto:{{ $address.email }}"><span class="fa-li"><i
+                                        class="fa fa-envelope"></i></span>{{ $address.email }}</a></li>
+                        <li class="mb-2">
+                            <span class="fa-li"><i class="fa fa-map-marker"></i></span>{{ $address.address }}</a>
                         </li>
                     </ul>
                 </div>

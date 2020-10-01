@@ -72,8 +72,6 @@
                 margin-bottom: 20px;
             }
             span{
-                font-family: $secondary-font;
-                color: #fff;
                 font-size: 20px;
                 display: block;
                 line-height: 1;
@@ -93,16 +91,14 @@
                     background: #fff;
                 }
             }
-            h1{
-                font-family: $primary-font;
-                font-size: 55px;
-                color: #fff;
-                margin: 0;
-                line-height: 1;
-                @include desktop{
-                    font-size: 40px;
-                }
-            }
+            // h1{
+            //     font-size: 55px;
+            //     margin: 0;
+            //     line-height: 1;
+            //     @include desktop{
+            //         font-size: 40px;
+            //     }
+            // }
         }
         &_action{
             width: 40%;
@@ -112,22 +108,9 @@
             }
             a{
                 float: right;
-                // color: $primary-color;
-                // padding: 15px 40px;
-                // background: #fff;
-                // display: inline-block;
-                // text-decoration: none;
-                // font-family: $secondary-font;
-                // border-radius: 7px;
-                // font-size: 16px;
-                // transition: all .3s ease;
                 @include desktop{
                     float: none;
                 }
-                // &:hover{
-                //     background: #768bf3;
-                //     color: #fff;
-                // }
             }
         }
     }
@@ -138,84 +121,22 @@
             padding: 50px 0;
         }
         &_sitemap{
-            @include desktop{
-                margin: 40px 0;
-            }
-            h3{
-                font-family: $secondary-font;
-                color: #fff;
-                margin: 0 0 40px 0;
-                line-height: 1;
-                font-size: 24px;
-                @include desktop{
-                    margin: 0 0 20px 0;
-                }
-            }
-            ul{
-                margin: 0;
-                padding: 0;
-                li{
-                    list-style: none;
-                    a{
-                        text-decoration: none;
-                        display: block;
-                        color: #fff;
-                        transition: all .3s ease;
-                        font-family: $secondary-font;
-                        font-size: 16px;
-                        &:hover{
-                            color: $primary-color;
-                        }
-                    }
-                    &:not(:last-child){
-                        margin-bottom: 10px;
-                    }
-                }
-            }
+            // @include desktop{
+            //     margin: 40px 0;
+            // }
+            // h3{
+            //     margin: 0 0 40px 0;
+            //     line-height: 1;
+            //     font-size: 24px;
+            //     @include desktop{
+            //         margin: 0 0 20px 0;
+            //     }
+            // }
         }
         &_address{
-            h3{
-                font-family: $secondary-font;
-                color: #fff;
-                margin: 0 0 40px 0;
-                line-height: 1;
-                font-size: 24px;
-                @include desktop{
-                    margin: 0 0 20px 0;
-                }
-            }
-            ul{
-                margin: 0;
-                padding: 0;
-                li{
-                    list-style: none;
-                    a{
-                        i{
-                            margin-right: 15px;
-                        }
-                        text-decoration: none;
-                        display: block;
-                        color: #fff;
-                        transition: all .3s ease;
-                        font-family: $secondary-font;
-                        font-size: 16px;
-                        &:hover{
-                            color: $primary-color;
-                        }
-                    }
-                    &:not(:last-child){
-                        margin-bottom: 10px;
-                    }
-                    p{
-                        color: #fff;
-                        margin: 0;
-                        i{
-                            margin-right: 20px;
-                            font-size: 17px;
-                        }
-                    }
-                }
-            }
+            // ul{
+            //     margin: 25px;
+            // }
         }
     }
     &__footer{
