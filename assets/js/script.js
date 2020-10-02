@@ -158,19 +158,6 @@ $(document).ready(function () {
   });
 
   // Modal Popup
-  // $(".popup-button").magnificPopup({
-  //   type: "iframe",
-  //   iframe: {
-  //     patterns: {
-  //       youtube: {
-  //         index: "youtube.com/",
-  //         id: "v=",
-  //         src: "//www.youtube.com/embed/tgbNymZ7vqY",
-  //       },
-  //     },
-  //   },
-  // });
-
   $('.popup-button').magnificPopup({
     disableOn: 700,
     type: 'iframe',
