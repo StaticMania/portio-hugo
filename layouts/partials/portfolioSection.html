@@ -1,10 +1,12 @@
+{{ with .Site.Data.portfolioSection }}
+{{ if .enable }}
 <section class="section portfolio" id="portfolio">
   <div class="container">
     <div class="row text-center">
       <div class="col-lg-6 offset-lg-3">
         <div class="portfolio__header">
-          <span>My Portfolio</span>
-          <h2>Check Some of Our Recent Work.</h2>
+          <span class="topTitle">{{ .topTitle }}</span>
+          {{ .title | markdownify }}
         </div>
       </div>
     </div>
@@ -28,3 +30,5 @@
     </div>
   </div>
 </section>
+{{ end }}
+{{ end }}
