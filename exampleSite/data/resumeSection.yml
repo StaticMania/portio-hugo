@@ -1,15 +1,10 @@
 ---
 enable: true
 topTitle: My Resume
-# Using "&nbsp;" is a way to force extra line breaks.
-# See: https://discourse.gohugo.io/t/does-hardlinebreak-works-with-multiple-line-breaks/12522
-content: >
+title: >
   ## My Expertises
 
   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore  
-
-
-  &nbsp;
 
 
   Magna aliquyam erat, sed diam voluptua. At vero eos accusam justo.
