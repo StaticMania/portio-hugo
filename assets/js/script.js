@@ -110,7 +110,6 @@ $(document).ready(function () {
   });
 
   // skill count
-
   $(".skill__progress").waypoint(
     function () {
       $(".progress-value span").each(function () {
@@ -174,8 +173,7 @@ $(document).ready(function () {
     // columnWidth: 200,
   });
 
-  //   blob animation
-
+  // blob animation
   var tl = new TimelineMax({
     yoyo: true,
     repeat: -1,
