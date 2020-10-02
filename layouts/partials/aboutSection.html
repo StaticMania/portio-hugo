@@ -5,9 +5,8 @@
         <div class="row text-center">
             <div class="col-lg-6 offset-lg-3">
                 <div class="about_header">
-                    <span>About</span>
-                    <h2> {{ .title }} </h2>
-                    <p> {{ .subtitle }} </p>
+                    <span class="topTitle">{{ .topTitle }}</span>
+                    {{ .title | markdownify}}
                 </div>
             </div>
         </div>
