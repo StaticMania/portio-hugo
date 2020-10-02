@@ -17,18 +17,28 @@ $secondary-font: 'Poppins', sans-serif;
 
 
 
-//
-// Bootstrap Variables
-//
+//////
+////// Bootstrap Variables
+//////
 
 // Colors
 $primary: #5D78FF;
 
+//
 // Typography
-$font-size-base: 1.125rem; // 18px
+//
 
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900|Yeseva+One&display=swap');
 $font-family-base: 'Poppins', sans-serif;
 $headings-font-family: 'Yeseva One', cursive;
+
+// @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+// $font-family-base: 'Merriweather', serif;
+// $headings-font-family: 'Merriweather Sans', sans-serif;
+
+// Size
+$font-size-base: 1.125rem; // 18px
 $h1-font-size:                60px;
 $h2-font-size:                50px;
 $h3-font-size:                30px;
@@ -36,7 +46,4 @@ $h4-font-size:                25px;
 $h5-font-size:                25px;
 $h6-font-size:                15px;
 
-// $link-color:                              theme-color("primary") !default;
-// $link-decoration:                         none !default;
-// $link-hover-color:                        darken($link-color, 15%) !default;
 $link-hover-decoration:                   none;
