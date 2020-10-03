@@ -71,31 +71,19 @@
         transition: all 0.3s ease;
         .progress {
           width: 100%;
-          background: #e7eef2;
+          background: $light;
           height: 10px;
           border-radius: 5px;
           .progress-bar {
             border-radius: 5px;
             position: relative;
             animation: animate-positive 3000ms;
-            background: #5d78ff;
+            background: $primary;
           }
         }
       }
       &:not(:last-child) {
         margin-bottom: 30px;
-      }
-      h6 {
-        display: inline-block;
-        font-family: $secondary-font;
-        font-weight: 400;
-        font-size: 16px;
-      }
-      .progress-value {
-        float: right;
-        font-family: $secondary-font;
-        font-size: 16px;
-        font-weight: 400;
       }
     }
   }

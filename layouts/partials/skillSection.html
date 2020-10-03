@@ -44,8 +44,8 @@
                     {{ $section := .skill }}
                     {{ range $section }}
                     <div class="skill__progress_item">
-                        <h6> {{ .title }} </h6>
-                        <div class="progress-value"><span>{{ .percent }}</span>%</div>
+                        <span class="d-inline-block text-dark"> {{ .title }} </span>
+                        <div class="progress-value float-right"><span>{{ .percent }}</span>%</div>
                         <div class="progress">
                             <div class="progress-bar" style="width:{{ .percent }}%;" aria-valuemin="0"
                                 aria-valuemax="{{ .percent }}"></div>

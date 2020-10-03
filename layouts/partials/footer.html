@@ -35,26 +35,26 @@
         </div>
         <div class="row footer__widget">
             <div class="col-lg-4">
-                <div class="footer__widget_logo">
+                <div class="footer__widget_logo mb-5">
                     <img src="{{ .Site.Params.footerLogo | absURL }}" alt="widget-logo">
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="text-light footer__widget_sitemap">
+                <div class="text-light footer__widget_sitemap mb-5">
                     <h4 class="base-font">Sitemap</h4>
-                    <ul class="fa-ul small ml-0 mt-4 mr-4 mb-4">
+                    <ul class="unstyle-list small">
                         {{ $sitemap := .Site.Menus.sitemap }}
                         {{ range $sitemap }}
-                        <li class="mb-2 ml-0"><a class="text-light" href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+                        <li class="mb-2"><a class="text-light" href="{{ .URL | absURL }}">{{ .Name }}</a></li>
                         {{ end }}
                     </ul>
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="text-light footer__widget_address">
+                <div class="text-light footer__widget_address mb-5">
                     <h4 class="base-font">Address</h4>
                     {{ $address := .Site.Params.address }}
-                    <ul class="fa-ul small m-4">
+                    <ul class="fa-ul small">
                         <li class="mb-2"><a class="text-light" href="tel:{{ $address.phone }}"><span class="fa-li"><i
                                         class="fa fa-phone"></i></span>{{ $address.phone }}</a></li>
                         <li class="mb-2"><a class="text-light" href="mailto:{{ $address.email }}"><span class="fa-li"><i
@@ -74,11 +74,12 @@
             </div>
             <div class="col-lg-6">
                 <div class="footer__footer_social">
-                    <ul>
-                        <li><a href=""><i class="fa fa-facebook-official"></i></a></li>
-                        <li><a href=""><i class="fa fa-linkedin-square"></i></a></li>
-                        <li><a href=""><i class="fa fa-pinterest-square"></i></a></li>
-                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                    <ul class="unstyle-list">
+                        {{ $social := .Site.Params.social }}
+                        {{ range $social }}
+                        <li><a target="_blank" href="{{ .url }}"><i class="fa {{ .icon }}"></i></a>
+                        </li>
+                        {{ end }}
                     </ul>
                 </div>
             </div>

@@ -91,14 +91,6 @@
                     background: #fff;
                 }
             }
-            // h1{
-            //     font-size: 55px;
-            //     margin: 0;
-            //     line-height: 1;
-            //     @include desktop{
-            //         font-size: 40px;
-            //     }
-            // }
         }
         &_action{
             width: 40%;
@@ -119,25 +111,16 @@
         @include desktop{
             text-align: center;
             padding: 50px 0;
+            .footer__widget_address {
+                ul {
+                    margin-right: 2.14285714em; // match fa-lu margin
+                }
+            }
         }
-        &_sitemap{
-            // @include desktop{
-            //     margin: 40px 0;
-            // }
-            // h3{
-            //     margin: 0 0 40px 0;
-            //     line-height: 1;
-            //     font-size: 24px;
-            //     @include desktop{
-            //         margin: 0 0 20px 0;
-            //     }
-            // }
-        }
-        &_address{
-            // ul{
-            //     margin: 25px;
-            // }
-        }
+        // &_sitemap{
+        // }
+        // &_address{
+        // }
     }
     &__footer{
         padding: 50px 0;

@@ -23,6 +23,7 @@ $secondary-font: 'Poppins', sans-serif;
 
 // Colors
 $primary: #5D78FF;
+$secondary: #7e7e8a;
 
 //
 // Typography
@@ -52,7 +53,7 @@ $line-height-base: 1.75;
 
 // Coloring
 $headings-color: #282f49;
-$body-color: #7e7e8a;
+$body-color: $secondary;
 
 // Misc
 $link-hover-decoration: none;
