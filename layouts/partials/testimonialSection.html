@@ -10,8 +10,8 @@
         <div class="row text-center">
             <div class="col-lg-6 offset-lg-3">
                 <div class="testimonial__header">
-                    <span>{{ .topTitle }}</span>
-                    <h2>{{ .title }}</h2>
+                    <span class="topTitle">{{ .topTitle }}</span>
+                    {{ .title | markdownify }}
                 </div>
             </div>
         </div>

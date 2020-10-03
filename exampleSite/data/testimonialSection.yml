@@ -1,7 +1,8 @@
 ---
 enable: true
-topTitle: Testimonial
-title: What People are Say About Me?
+topTitle: Testimonials
+title: >
+  ## What People are Say About Me?
 
 testimonial:
   - name: Ryan Cook
