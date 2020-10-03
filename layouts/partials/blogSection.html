@@ -8,8 +8,8 @@
     <div class="row mb-5">
       <div class="col-lg-6">
         <div class="blog__header">
-          <span>{{ .topTitle }}</span>
-          {{ .content | markdownify }}
+          <span class="topTitle">{{ .topTitle }}</span>
+          {{ .title | markdownify }}
         </div>
       </div>
       <div class="col-lg-6">
