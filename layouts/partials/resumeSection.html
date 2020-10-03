@@ -7,16 +7,14 @@
             <div class="col-lg-6">
                 <div class="resume__heading">
                     <div class="text-light">
-                        <span class="topTitle">{{ .topTitle }}</span>
+                        <span class="top-title pre-line">{{ .topTitle }}</span>
                         {{ .title | markdownify }}
                     </div>
 
-                    <ul class="btn-group nav nav-tabs">
-                        <li><a href="#{{.tab1Target}}" class="btn btn-primary active"
-                                data-toggle="tab">{{ .tab1Name }}</a></li>
-                        <li><a href="#{{.tab2Target}}" class="btn btn-primary" data-toggle="tab">{{ .tab2Name }}</a>
-                        </li>
-                    </ul>
+                    <div class="btn-group nav mt-5">
+                        <a href="#{{.tab1Target}}" class="btn btn-primary active" data-toggle="tab">{{ .tab1Name }}</a>
+                        <a href="#{{.tab2Target}}" class="btn btn-primary" data-toggle="tab">{{ .tab2Name }}</a>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -25,7 +23,7 @@
                         {{ $Section := .education }}
                         {{ range $Section }}
                         <div class="resume__education_item">
-                            <span> {{ .time }} </span>
+                            <span class="pre-line text-primary"> {{ .time }} </span>
                             {{ .content | markdownify }}
                         </div>
                         {{ end }}
@@ -36,7 +34,7 @@
                         {{ $Section := .experience }}
                         {{ range $Section }}
                         <div class="resume__education_item">
-                            <span> {{ .time }} </span>
+                            <span class="pre-line text-primary"> {{ .time }} </span>
                             {{ .content | markdownify }}
                         </div>
                         {{ end }}

@@ -27,11 +27,10 @@
               </g>
             </svg>
           </div>
-          <div>
-            <span>{{ .topTitle }}</span>
+          <div class="mb-5">
+            <span class="top-title pre-line">{{ .topTitle }}</span>
             {{ .content | markdownify }}
           </div>
-          <p></p> <!-- I'm unsure why this <p> is needed -->
           <a type="button" class="btn btn-lg btn-primary btn-zoom"
             href="{{ .buttonURL | absURL }}">{{ .buttonName }}</a>
         </div>

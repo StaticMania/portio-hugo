@@ -39,11 +39,18 @@ $headings-font-family: 'Yeseva One', cursive;
 
 // Size
 $font-size-base: 1.125rem; // 18px
-$h1-font-size:                60px;
-$h2-font-size:                50px;
-$h3-font-size:                30px;
-$h4-font-size:                25px;
-$h5-font-size:                25px;
-$h6-font-size:                15px;
+$h1-font-size:   60px;
+$h2-font-size:   50px;
+$h3-font-size:   30px;
+$h4-font-size:   25px;
+$h5-font-size:   25px;
+$h6-font-size:   15px;
 
-$link-hover-decoration:                   none;
+// Spacing
+$headings-margin-bottom: 1.5rem;
+$line-height-base: 1.75;
+
+
+
+// Misc
+$link-hover-decoration: none;

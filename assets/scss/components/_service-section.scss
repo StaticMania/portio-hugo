@@ -35,37 +35,6 @@
             display: none;
         }
     }
-    &__header{
-        margin-bottom: 50px;
-        span{
-            font-size: 20px;
-            font-family: $secondary-font;
-            color: $secondary-color;
-            position: relative;
-            display: block;
-            margin: 0 0 20px 30px;
-            &::before{
-                position: absolute;
-                content: '';
-                height: 2px;
-                width: 20px;
-                top: 50%;
-                left: -20px;
-                transform: translateX(-50%);
-                background: $secondary-color;
-            }
-        }
-        h2{
-            margin: 0 0 30px 0;
-            font-size: 50px;
-            @include tablet{
-                font-size: 39px;
-            }
-        }
-        p{
-            font-size: 18px;
-        }
-    }
     &__slider{
         &_item{
             margin: 15px;
@@ -88,9 +57,6 @@
                     bottom: 0;
                     z-index: 1;
                 }
-            }
-            h4{
-                margin: 40px 0 30px 0;
             }
         }
         .slick-list {

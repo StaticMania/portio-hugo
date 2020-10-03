@@ -4,8 +4,8 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-lg-6 offset-lg-3">
-                <div class="about_header">
-                    <span class="topTitle">{{ .topTitle }}</span>
+                <div class="about_header mb-5">
+                    <span class="top-title">{{ .topTitle }}</span>
                     {{ .title | markdownify}}
                 </div>
             </div>
@@ -39,17 +39,15 @@
                                 </g>
                             </svg>
                         </div>
-                        <div class="text-light">
+                        <div class="mb-4 text-light">
                             {{ .content | markdownify}}
                         </div>
-                        <ul>
-                            <li><a class="btn btn-primary btn-zoom"
-                                    href="{{ .button1Target | absURL }}">{{ .button1Name }}</a>
-                            </li>
-                            <li><a class="btn btn-outline-primary btn-zoom" href="{{ .button2Target | absURL }}">
-                                    {{ .button2Name }} </a>
-                            </li>
-                        </ul>
+                        <div>
+                            <a class="btn btn-primary mr-3 btn-zoom"
+                                href="{{ .button1Target | absURL }}">{{ .button1Name }}</a>
+                            <a class="btn btn-outline-primary btn-zoom" href="{{ .button2Target | absURL }}">
+                                {{ .button2Name }} </a>
+                        </div>
                     </div>
                 </div>
             </div>

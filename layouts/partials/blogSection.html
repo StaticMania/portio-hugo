@@ -8,13 +8,13 @@
     <div class="row mb-5">
       <div class="col-lg-6">
         <div class="blog__header">
-          <span class="topTitle">{{ .topTitle }}</span>
+          <span class="top-title pre-line">{{ .topTitle }}</span>
           {{ .title | markdownify }}
         </div>
       </div>
       <div class="col-lg-6">
         <div class="blog__header_button desktop">
-          <a class="btn btn-outline-secondary btn-zoom" href="{{ .buttonTarget | absURL }}">See all post</a>
+          <a class="btn btn-outline-secondary  btn-zoom m-3" href="{{ .buttonTarget | absURL }}">See all post</a>
         </div>
       </div>
     </div>

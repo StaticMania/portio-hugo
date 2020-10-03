@@ -29,8 +29,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12">
-                <div class="service__header">
-                    <span class="topTitle">{{ .topTitle }}</span>
+                <div class="service__header mb-5">
+                    <span class="top-title pre-line">{{ .topTitle }}</span>
                     {{ .title | markdownify }}
                 </div>
             </div>
@@ -54,7 +54,9 @@
                                 <img src=" {{ .image | absURL }} " alt="ui-ux">
                             </div>
                         </div>
-                        {{ .content | markdownify }}
+                        <div class="mt-5">
+                            {{ .content | markdownify }}
+                        </div>
                     </div>
                     {{ end }}
                 </div>
