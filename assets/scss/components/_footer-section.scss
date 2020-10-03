@@ -138,29 +138,10 @@
         }
         &_social{
             ul{
-                margin: 0;
-                padding: 0;
                 float: right;
                 @include desktop{
                     margin: 20px auto 0;
                     float: none;
-                }
-                li{
-                    list-style: none;
-                    display: inline-block;
-                    a{
-                        display: block;
-                        text-decoration: none;
-                        color: #fff;
-                        font-size: 20px;
-                        transition: all .3s ease;
-                        &:hover{
-                            color: $primary-color;
-                        }
-                    }
-                    &:not(:last-child){
-                        margin-right: 25px;
-                    }
                 }
             }
         }

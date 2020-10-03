@@ -77,7 +77,8 @@
                     <ul class="unstyle-list">
                         {{ $social := .Site.Params.social }}
                         {{ range $social }}
-                        <li><a target="_blank" href="{{ .url }}"><i class="fa {{ .icon }}"></i></a>
+                        <li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="{{ .url }}"><i
+                                    class="fa {{ .icon }}"></i></a>
                         </li>
                         {{ end }}
                     </ul>
