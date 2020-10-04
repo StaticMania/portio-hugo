@@ -15,7 +15,7 @@
         {{ range $index, $element := $menu }}
         <li class="nav-item">
           <a href="{{ $.Site.BaseURL }}{{ .URL }}"
-            class="nav-link text-dark text-sm-center px-2 py-3 {{ if $.IsHome }}scroll{{ end }}">{{ .Name }}</a>
+            class="nav-link text-dark text-sm-center p-3 small font-weight-bold {{ if $.IsHome }}scroll{{ end }}">{{ .Name }}</a>
         </li>
         {{ end }}
       </ul>

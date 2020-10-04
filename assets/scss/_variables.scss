@@ -1,10 +1,10 @@
 //site color variables
-$primary-color: #5D78FF;
-$secondary-color: #282F49;
-$text-color: #9D9EA5;
-$text-color-dark: #00113E;
+$primary-color: #5d78ff;
+$secondary-color: #282f49;
+$text-color: #9d9ea5;
+$text-color-dark: #00113e;
 $site-ease: cubic-bezier(0.36, 0.03, 0, 0.91);
-$gray: #F7F9FF;
+$gray: #f7f9ff;
 $dark-gray: #646569;
 
 // solid colors
@@ -12,17 +12,15 @@ $white: #fff;
 $black: #000;
 
 // Font Variables
-$primary-font: 'Yeseva One', cursive;
-$secondary-font: 'Poppins', sans-serif;
-
-
+$primary-font: "Yeseva One", cursive;
+$secondary-font: "Poppins", sans-serif;
 
 //////
 ////// Bootstrap Variables
 //////
 
 // Colors
-$primary: #5D78FF;
+$primary: #5d78ff;
 $secondary: #7e7e8a;
 
 //
@@ -30,9 +28,9 @@ $secondary: #7e7e8a;
 //
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900|Yeseva+One&display=swap');
-$font-family-base: 'Poppins', sans-serif;
-$headings-font-family: 'Yeseva One', cursive;
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900|Yeseva+One&display=swap");
+$font-family-base: "Poppins", sans-serif;
+$headings-font-family: "Yeseva One", cursive;
 
 // @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 // $font-family-base: 'Merriweather', serif;
@@ -40,12 +38,12 @@ $headings-font-family: 'Yeseva One', cursive;
 
 // Size
 $font-size-base: 1.125rem; // 18px
-$h1-font-size:   60px;
-$h2-font-size:   50px;
-$h3-font-size:   30px;
-$h4-font-size:   25px;
-$h5-font-size:   25px;
-$h6-font-size:   15px;
+$h1-font-size: 60px;
+$h2-font-size: 50px;
+$h3-font-size: 30px;
+$h4-font-size: 25px;
+$h5-font-size: 22px;
+$h6-font-size: 16px;
 
 // Spacing
 $headings-margin-bottom: 1.5rem;
