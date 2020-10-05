@@ -2,26 +2,31 @@
     font-family: $font-family-base;
 }
 
-a.text-light, a.text-dark {
-    transition: all .3s ease;
-    &:hover{
+* {
+    transition: all 0.3s ease;
+}
+
+a.text-light,
+a.text-dark {
+    // transition: all 0.3s ease;
+    &:hover {
         color: $primary !important;
     }
 }
 
-.top-title{
+.top-title {
     font-size: 20px;
     display: block;
     color: $dark;
     @extend .mb-3;
 }
 
-.pre-line{
+.pre-line {
     margin-left: 20px;
     position: relative;
-    &::before{
+    &::before {
         position: absolute;
-        content: '';
+        content: "";
         height: 2px;
         width: 20px;
         top: 50%;
@@ -34,13 +39,25 @@ a.text-light, a.text-dark {
 // This fixes the fact that with `markdownify` we can't add `text-light`
 // directly onto the generated `h1`, `h2` etc.
 .text-white {
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         color: $white;
     }
 }
 @each $color, $value in $theme-colors {
     .text-#{$color} {
-        h1, h2, h3, h4, h5, h6, p, span {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        span {
             color: $value;
         }
     }
