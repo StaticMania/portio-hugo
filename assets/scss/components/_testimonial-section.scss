@@ -99,7 +99,7 @@
             outline: 0;
           }
           &:hover {
-            background: $primary-color;
+            background: $primary;
           }
         }
         &.slick-active {
@@ -107,7 +107,7 @@
           width: 10px;
           border-radius: 50%;
           button {
-            background-color: $primary-color;
+            background-color: $primary;
           }
         }
       }

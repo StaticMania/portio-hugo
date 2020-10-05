@@ -19,7 +19,7 @@
         }
     }
     &__cta {
-        background: $primary-color;
+        background: $primary;
         padding: 100px 80px;
         border-radius: 20px;
         display: flex;
@@ -117,10 +117,6 @@
                 }
             }
         }
-        // &_sitemap{
-        // }
-        // &_address{
-        // }
     }
     &__footer {
         padding: 50px 0;
