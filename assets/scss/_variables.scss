@@ -1,6 +1,13 @@
+//
 // Colors
+//
+
+// General
 $primary: #5d78ff;
 $secondary: #282f49;
+// Text
+$headings-color: #282f49;
+$body-color: #7e7e8a;
 
 //
 // Typography
@@ -10,10 +17,6 @@ $secondary: #282f49;
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900|Yeseva+One&display=swap");
 $font-family-base: "Poppins", sans-serif;
 $headings-font-family: "Yeseva One", cursive;
-
-// @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
-// $font-family-base: 'Merriweather', serif;
-// $headings-font-family: 'Merriweather Sans', sans-serif;
 
 // Size
 $font-size-base: 1.125rem; // 18px
@@ -27,10 +30,6 @@ $h6-font-size: 16px;
 // Spacing
 $headings-margin-bottom: 1.5rem;
 $line-height-base: 1.75;
-
-// Coloring
-$headings-color: #282f49;
-$body-color: #7e7e8a;
 
 // Misc
 $link-hover-decoration: none;
