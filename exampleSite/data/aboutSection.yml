@@ -1,10 +1,11 @@
 ---
 enable: true
-title: About me
-subtitle:
+topTitle: About
+title: >
+  ## About me
+
   Enjoy team diversity and increase their networks among others people in
   various fields by provided.
-title2: I design and build ultimate things.
 content: >
   ### I design and build ultimate things.
 

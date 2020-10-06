@@ -1,43 +1,64 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900|Yeseva+One&display=swap');
+.base-font {
+    font-family: $font-family-base;
+}
 
-// body{
-//   font-family: $primary-font;
-//   font-size: 16px;
-//   color: $text-color;
-// }
+* {
+    transition: all 0.3s ease;
+}
 
-// h1, h2, h3, h4, h5, h6{
-//   font-family: $primary-font;
-//   font-weight: 600;
-//   color: $text-color-dark;
-// }
+a.text-light,
+a.text-dark {
+    // transition: all 0.3s ease;
+    &:hover {
+        color: $primary !important;
+    }
+}
 
-// p{
-//   font-size: 16px;
-//   color: $text-color;
-// }
+.top-title {
+    font-size: 20px;
+    display: block;
+    color: $dark;
+    @extend .mb-3;
+}
 
-// h1{
-//   font-size: 60px;
-// }
+.pre-line {
+    margin-left: 20px;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 20px;
+        top: 50%;
+        left: -20px;
+        transform: translateX(-50%);
+        background: $secondary;
+    }
+}
 
-// h2{
-//   font-size: 50px;
-// }
-
-// h3{
-//   font-size: 30px;
-// }
-
-// h4{
-//   font-size: 25px;
-// }
-
-// h5{
-//   font-size: 18px;
-// }
-
-// h6{
-//   font-size: 15px;
-//   font-weight: 300;
-// }
+// This fixes the fact that with `markdownify` we can't add `text-light`
+// directly onto the generated `h1`, `h2` etc.
+.text-white {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $white;
+    }
+}
+@each $color, $value in $theme-colors {
+    .text-#{$color} {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        span {
+            color: $value;
+        }
+    }
+}

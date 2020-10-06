@@ -10,11 +10,12 @@
     </button>
 
     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-      <ul class="nav navbar-nav main-navigation">
+      <ul class="nav navbar-nav main-navigation my-0 mx-auto">
         {{ $menu := .Site.Menus.main }}
         {{ range $index, $element := $menu }}
         <li class="nav-item">
-          <a href="{{ $.Site.BaseURL }}{{ .URL }}" class="nav-link {{ if $.IsHome }}scroll{{ end }}">{{ .Name }}</a>
+          <a href="{{ $.Site.BaseURL }}{{ .URL }}"
+            class="nav-link text-dark text-sm-center p-2 {{ if $.IsHome }}scroll{{ end }}">{{ .Name }}</a>
         </li>
         {{ end }}
       </ul>
