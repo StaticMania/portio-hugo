@@ -66,22 +66,6 @@ $(document).ready(function () {
     }
   });
 
-  // Smooth scrolling
-  var scrollLink = $(".scroll");
-  scrollLink.click(function (e) {
-    e.preventDefault();
-    $("body,html").animate(
-      {
-        scrollTop: $(this.hash).offset().top,
-      },
-      1000
-    );
-  });
-
-  $(".navbar-nav>li>a").on("click", function () {
-    $(".navbar-collapse").collapse("hide");
-  });
-
   // service slider
   $(".service__slider").slick({
     infinite: false,
