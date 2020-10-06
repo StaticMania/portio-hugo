@@ -10,46 +10,38 @@ url = "#home"
 weight = 1
 [[menu.main]]
 name = "About"
-url = "#about"
+url = "/#about"
 weight = 2
 [[menu.main]]
 name = "Service"
-url = "#service"
+url = "/#service"
 weight = 3
 [[menu.main]]
 name = "Work"
-url = "#portfolio"
+url = "/#portfolio"
 weight = 4
 [[menu.main]]
 name = "Resume"
-url = "#resume"
+url = "/#resume"
 weight = 5
 [[menu.main]]
 name = "Blog"
-url = "#blog"
+url = "/blog"
 weight = 6
 [[menu.main]]
 name = "Contact"
-url = "#contact"
+url = "/contact"
 weight = 7
 
 # Sitemap Menu
 [[menu.sitemap]]
 name = "About me"
-url = "about"
+url = "/#about"
 weight = 1
 [[menu.sitemap]]
-name = "Frequently Ask Question"
-url = "#"
-weight = 2
-[[menu.sitemap]]
-name = "Privacy & Policy"
-url = "#"
-weight = 3
-[[menu.sitemap]]
 name = "Latest Article"
-url = "#"
-weight = 4
+url = "/blog"
+weight = 2
 
 [params]
 blogPageURL = "blog"
