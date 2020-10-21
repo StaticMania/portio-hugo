@@ -72,7 +72,7 @@ latitude = "23.7783741"
 longitude = "90.3746808"
 pinImage = "images/pin.png"
 
-# Socail icons
+# Social icons
 [[params.social]]
 icon = "fa-facebook-official"
 url = "https://www.facebook.com/"
