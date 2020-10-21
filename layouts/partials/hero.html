@@ -46,6 +46,8 @@
                   -webkit-mask-size: contain;
                   -webkit-mask-position: center center;
                 ' />
+
+          {{ if .videoURL }}
           <div class="hero_figure-popup">
             <div class="thumb">
               <img src="{{ .videoThumb }}" alt="popup" />
@@ -58,6 +60,7 @@
               </svg>
             </a>
           </div>
+          {{end}}
         </div>
       </div>
     </div>
