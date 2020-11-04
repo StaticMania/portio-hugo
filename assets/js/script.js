@@ -157,20 +157,22 @@ $(document).ready(function () {
   });
 
   // Modal Popup
-  $('.popup-button').magnificPopup({
+  $(".popup-button").magnificPopup({
     disableOn: 700,
-    type: 'iframe',
-    mainClass: 'mfp-fade',
+    type: "iframe",
+    mainClass: "mfp-fade",
     removalDelay: 160,
     preloader: false,
 
-    fixedContentPos: false
+    fixedContentPos: false,
   });
 
-  $(".portfolio-item-grid").masonry({
-    // options
+  var portfolioGrid = $(".portfolio-item-grid").masonry({
     itemSelector: ".portfolio-item",
-    // columnWidth: 200,
+  });
+
+  portfolioGrid.imagesLoaded().progress(function () {
+    portfolioGrid.masonry("layout");
   });
 
   // blob animation
