@@ -45,7 +45,9 @@
 					<ul class="unstyle-list small">
 						{{ $sitemap := .Site.Menus.sitemap }}
 						{{ range $sitemap }}
-						<li class="mb-2"><a class="text-light" href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+						<li class="mb-2">
+							<a class="text-light scroll" href="{{ .URL }}">{{ .Name }}</a>
+						</li>
 						{{ end }}
 					</ul>
 				</div>
