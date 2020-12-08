@@ -23,12 +23,12 @@
 						</svg>
 					</div>
 					<div class="text-light footer__cta_content">
-						<span>Contact me</span>
-						<h2 class="mb-0">Let’s Start a Project</h2>
+						<span>{{ .Site.Params.FooterTopTitle }}</span>
+						<h2 class="mb-0">{{ .Site.Params.FooterCallToAction }}</h2>
 					</div>
 					<div class="footer__cta_action">
-						<a class="btn btn-light btn-zoom" href="{{ .Site.Params.contactLink | absURL }}">Get in
-							touch</a>
+						<a class="btn btn-light btn-zoom"
+							href="{{ .Site.Params.footerButtonTarget }}">{{ .Site.Params.FooterButtonText }}</a>
 					</div>
 				</div>
 			</div>
@@ -45,7 +45,9 @@
 					<ul class="unstyle-list small">
 						{{ $sitemap := .Site.Menus.sitemap }}
 						{{ range $sitemap }}
-						<li class="mb-2"><a class="text-light" href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+						<li class="mb-2">
+							<a class="text-light scroll" href="{{ .URL }}">{{ .Name }}</a>
+						</li>
 						{{ end }}
 					</ul>
 				</div>
