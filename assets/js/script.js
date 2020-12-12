@@ -69,13 +69,16 @@ $(document).ready(function () {
   // Smooth scrolling
   var scrollLink = $(".scroll");
   scrollLink.click(function (e) {
-    e.preventDefault();
-    $("body,html").animate(
-      {
-        scrollTop: $(this.hash).offset().top,
-      },
-      1000
-    );
+    let elem = $(this.hash)
+    if (elem.length) {
+      e.preventDefault();
+      $("body,html").animate(
+        {
+          scrollTop: elem.offset().top,
+        },
+        1000
+      );
+    }
   });
 
   $(".navbar-nav>li>a").on("click", function () {
