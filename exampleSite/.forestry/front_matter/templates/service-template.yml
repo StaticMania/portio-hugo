@@ -27,5 +27,3 @@ fields:
   - type: file
     name: image
     label: Icon
-pages:
-- data/serviceSection.yml

@@ -14,5 +14,3 @@ fields:
 - type: file
   name: postImage
   label: postImage
-pages:
-- content/blog/you-must-know-this-before-becoming-a-designer.md

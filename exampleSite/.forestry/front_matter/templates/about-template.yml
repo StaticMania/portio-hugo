@@ -29,9 +29,6 @@ fields:
 - type: text
   name: button2Target
   label: button2Target
-  # src: docs/cvbailly.pdf
 - type: file
   name: image
   label: image
-pages:
-- data/aboutSection.yml

@@ -29,8 +29,3 @@ fields:
 - type: textarea
   name: solution
   label: solution
-pages:
-- content/portfolio/UX-case-study-for-agriculture-app.md
-- content/portfolio/case-study-one.md
-- content/portfolio/event-app-case-study.md
-- content/portfolio/recipe-app-ux-study.md
