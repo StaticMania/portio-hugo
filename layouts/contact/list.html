@@ -54,7 +54,7 @@
               <img src="{{ "images/contact/location.svg" | absURL }}" alt="location" />
             </div>
           </div>
-          <h4>Office Address</h4>
+          <h4>Adresse</h4>
           <p>
             {{ $address.address }}
           </p>
@@ -74,7 +74,7 @@
               <img src="{{ "images/contact/phone.svg" | absURL }}" alt="phone" />
             </div>
           </div>
-          <h4>Phone & Email</h4>
+          <h4>Téléphone et E-mail</h4>
           <p>{{ $address.phone }}<br>
             <a href="mailto:{{ $address.email }}">{{ $address.email }}</a>
           </p>
@@ -95,7 +95,7 @@
               <img src="{{ "images/contact/time.svg" | absURL }}" alt="time" />
             </div>
           </div>
-          <h4>Working Hours</h4>
+          <h4>Heures d'ouverture</h4>
           <p>
             {{ $address.openingHours }}
           </p>
@@ -110,7 +110,7 @@
     <div class="row">
       <div class="col-lg-6">
         <div class="contact-form-title">
-          <h3>Contact Form</h3>
+          <h3>Contactez-moi</h3>
         </div>
         <div class="contact-form-input">
           <form id="contact-form" action="{{ .Site.Params.formspreeURL }}" method="POST">
@@ -133,12 +133,12 @@
               <div class="form-check small">
                 <input type="checkbox" class="form-check-input" name="agreement" id="aggrement" required />
                 <label class="form-check-label" for="aggrement">
-                  I agree that my submitted data is being collected and
-                  stored.</label>
+                  J'accepte que mes données soumises soient collectées et
+                  stockée.</label>
               </div>
             </div>
 
-            <button type="submit" class="btn btn-primary btn-zoom" id="contact-form-button">Send Message</button>
+            <button type="submit" class="btn btn-primary btn-zoom" id="contact-form-button">Parlons-en</button>
             <p id="contact-form-status" class="mt-3"></p>
           </form>
 
