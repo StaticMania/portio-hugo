@@ -29,5 +29,3 @@ fields:
 - type: textarea
   name: solution
   label: solution
-pages:
-- content/portfolio/site-lcdigitale.md
