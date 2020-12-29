@@ -29,5 +29,3 @@ fields:
 - type: text
   name: videoURL
   label: videoURL
-pages:
-- data/hero.yml
