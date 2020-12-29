@@ -36,25 +36,27 @@
 	</div>
 </header>
 
-<section class="section blog">
-  <div class="container">
-      <div class="row">
-        {{ range .Paginator.Pages }}
-          <div class="col-lg-4">
-              <div class="blog__item">
-                  <div class="blog__item-thumb">
-                      <img src={{ .Params.featureImage | absURL }} alt="post-image">
-                  </div>
-                  <div class="blog__item-content">
-                      <span>{{ .PublishDate.Format "January 2, 2006" }}</span>
-                      <a href="{{ .Permalink }}">{{ .Title }}</a>
-                  </div>
-              </div>
-          </div>
-				{{ end }}
-				{{ partial "pagination" .}}
-      </div>
-  </div>
+<section class="section blog-page">
+	<div class="container">
+		<div class="row">
+			{{ range .Paginator.Pages }}
+			<div class="col-lg-4">
+				<div class="blog-page__item">
+					<div class="blog-page__item-thumb">
+						<img src="{{ .Params.featureImage | absURL }}" alt="post-image">
+					</div>
+					<div class="blog-page__item-content bg-white">
+						<span class="small">{{ .PublishDate.Format "January 2, 2006" }}</span>
+						<h5 class="mb-0">
+							<a class="text-dark" href="{{ .Permalink }}">{{ .Title }}</a>
+						</h5>
+					</div>
+				</div>
+			</div>
+			{{ end }}
+			{{ partial "pagination" .}}
+		</div>
+	</div>
 </section>
 
 {{ end }}

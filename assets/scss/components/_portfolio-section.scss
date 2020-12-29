@@ -3,34 +3,13 @@
   @include desktop {
     padding: 100px 0;
   }
-  &__header {
-    margin-bottom: 80px;
-    @include tablet {
-      margin-bottom: 50px;
-    }
-    span {
-      display: block;
-      font-size: 20px;
-      font-family: $secondary-font;
-      margin: 0 0 30px 0;
-    }
-    h1 {
-      margin: 0 0 20px 0;
-      font-size: 55px;
-      font-family: $primary-font;
-      color: $secondary-color;
-      line-height: 1;
-      @include tablet {
-        font-size: 40px;
-      }
-    }
-  }
   &-item {
     width: 50%;
     padding: 30px;
     @include tablet {
       width: 100%;
       padding: 0;
+      margin: 0;
     }
     &:nth-child(4n-3) {
       padding-right: 70px;
@@ -50,7 +29,6 @@
     &-grid {
       display: flex;
       flex-wrap: wrap;
-      margin: 0 -30px;
     }
     &-thumb {
       transition: 0.3s ease;
@@ -59,35 +37,16 @@
     }
     &-content {
       span {
-        font-family: $secondary-font;
         color: #7e7e8a;
         font-size: 18px;
         line-height: 1;
         display: block;
         margin: 28px 0 20px 0;
       }
-      h3 {
-        margin: 0 0 20px 0;
-        a {
-          font-family: $primary-font;
-          color: $secondary-color;
-          font-size: 25px;
-          line-height: 40px;
-          transition: all 0.3s ease;
-          display: block;
-          &:hover {
-            text-decoration: none;
-            color: $primary-color;
-          }
-        }
-      }
       .see-more-btn {
-        text-decoration: none;
         display: inline-block;
-        font-family: $secondary-font;
-        color: $primary-color;
+        color: $primary;
         position: relative;
-        font-size: 17px;
         margin: 0 0 0 30px;
         transform: scaleY(0);
         transform-origin: bottom center;
@@ -97,7 +56,7 @@
           content: "";
           height: 2px;
           width: 20px;
-          background: $primary-color;
+          background: $primary;
           top: 50%;
           left: -30px;
           transform: translateY(-50%);

@@ -1,47 +1,49 @@
 {{ with .Site.Data.blogSection }}
 {{ if .enable }}
-<section class="section blog" id="blog">
-  <div class="blog__shape">
-    <img src="images/blog/blog-shape.svg" alt="blog shape" />
-  </div>
-  <div class="container">
-    <div class="row mb-5">
-      <div class="col-lg-6">
-        <div class="blog__header">
-          <span>{{ .topTitle }}</span>
-          {{ .content | markdownify }}
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="blog__header_button desktop">
-          <a class="btn btn-outline-secondary btn-zoom" href="{{ .buttonTarget | absURL }}">See all post</a>
-        </div>
-      </div>
-    </div>
+<section class="section blog-preview" id="blog">
+	<div class="blog-preview__shape">
+		<img src="images/blog/blog-shape.svg" alt="blog shape" />
+	</div>
+	<div class="container">
+		<div class="row mb-5">
+			<div class="col-lg-6">
+				<div class="blog-preview__header">
+					<span class="top-title pre-line">{{ .topTitle }}</span>
+					{{ .title | markdownify }}
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="blog-preview__header_button desktop">
+					<a class="btn btn-outline-secondary  btn-zoom m-3" href="{{ .buttonTarget | absURL }}">Voir tous les articles</a>
+				</div>
+			</div>
+		</div>
 
-    <div class="row">
-      {{ range first 3 (where $.Site.RegularPages "Type" "!=" "portfolio") }}
-      <div class="col-lg-4">
-        <div class="blog__item">
-          <div class="blog__item-thumb">
-            <img src="{{ .Params.featureImage | absURL }}" alt="post-image">
-          </div>
-          <div class="blog__item-content">
-            <span>{{ .PublishDate.Format "January 2, 2006" }}</span>
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-          </div>
-        </div>
-      </div>
-      {{ end }}
+		<div class="row">
+			{{ range first 3 (where $.Site.RegularPages "Type" "!=" "portfolio") }}
+			<div class="col-lg-4">
+				<div class="blog-preview__item">
+					<div class="blog-preview__item-thumb">
+						<img src="{{ .Params.featureImage | absURL }}" alt="post-image">
+					</div>
+					<div class="blog-preview__item-content bg-white">
+						<span class="small">{{ .PublishDate.Format "January 2, 2006" }}</span>
+						<h5 class="mb-0">
+							<a class="text-dark" href="{{ .Permalink }}">{{ .Title }}</a>
+						</h5>
+					</div>
+				</div>
+			</div>
+			{{ end }}
 
-    </div>
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="blog__header_button mobile">
-          <a class="btn btn-outline-secondary btn-zoom" href="{{ .buttonTarget | absURL }}">See all post</a>
-        </div>
-      </div>
-    </div>
-  </div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="blog-preview__header_button mobile">
+					<a class="btn btn-outline-secondary btn-zoom" href="{{ .buttonTarget | absURL }}">Voir tous les articles</a>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 {{ end }} {{ end }}

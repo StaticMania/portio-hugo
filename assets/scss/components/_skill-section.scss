@@ -66,71 +66,24 @@
       margin-left: 0;
       margin-top: 30px;
     }
-    &_heading {
-      margin-bottom: 40px;
-      span {
-        font-size: 20px;
-        font-family: $secondary-font;
-        color: $secondary-color;
-        position: relative;
-        display: block;
-        margin: 0 0 20px 30px;
-        &::before {
-          position: absolute;
-          content: "";
-          height: 2px;
-          width: 20px;
-          top: 50%;
-          left: -20px;
-          transform: translateX(-50%);
-          background: $secondary-color;
-        }
-      }
-      h1 {
-        margin: 0 0 30px 0;
-        font-size: 50px;
-        font-family: $primary-font;
-        color: $secondary-color;
-        line-height: 50px;
-      }
-      p {
-        margin: 0 0 0 0;
-        font-family: $secondary-font;
-        color: $secondary-color;
-        font-size: 18px;
-        line-height: 26px;
-      }
-    }
     &_item {
       &.js-animation {
         transition: all 0.3s ease;
         .progress {
           width: 100%;
-          background: #e7eef2;
+          background: $light;
           height: 10px;
           border-radius: 5px;
           .progress-bar {
             border-radius: 5px;
             position: relative;
             animation: animate-positive 3000ms;
-            background: #5d78ff;
+            background: $primary;
           }
         }
       }
       &:not(:last-child) {
         margin-bottom: 30px;
-      }
-      h6 {
-        display: inline-block;
-        font-family: $secondary-font;
-        font-weight: 400;
-        font-size: 16px;
-      }
-      .progress-value {
-        float: right;
-        font-family: $secondary-font;
-        font-size: 16px;
-        font-weight: 400;
       }
     }
   }

@@ -1,0 +1,70 @@
+.navbar {
+    padding: 40px 0;
+    background: transparent;
+    transition: all 0.3s ease;
+    @include desktop {
+        background: $white;
+    }
+    @include desktop {
+        padding: 15px 20px;
+        margin: 10px 10px 0;
+        border-radius: 5px;
+    }
+    .navbar-brand {
+        img {
+            @include desktop {
+                width: 80%;
+            }
+        }
+    }
+    &.nav__color__change {
+        background: $white;
+        padding: 20px 0;
+        box-shadow: 0px 10px 20px 0px rgba(50, 65, 141, 0.1);
+        @include desktop {
+            padding: 15px 20px;
+        }
+    }
+    @include desktop {
+        .navbar-toggler {
+            outline: 0;
+            padding: 0;
+            &-icon {
+                height: 2px;
+                width: 25px;
+                transition: all 0.2s;
+                background: $primary;
+                display: block;
+                &:not(:last-child) {
+                    margin-bottom: 5px;
+                }
+                &:nth-child(1) {
+                    transform: rotate(45deg);
+                    transform-origin: 10% 10%;
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                    filter: alpha(opacity=0);
+                }
+                &:nth-child(3) {
+                    transform: rotate(-45deg);
+                    transform-origin: 10% 90%;
+                }
+            }
+            &.collapsed {
+                .navbar-toggler-icon {
+                    &:nth-child(1) {
+                        transform: rotate(0);
+                    }
+                    &:nth-child(2) {
+                        opacity: 1;
+                        filter: alpha(opacity=1);
+                    }
+                    &:nth-child(3) {
+                        transform: rotate(0);
+                    }
+                }
+            }
+        }
+    }
+}

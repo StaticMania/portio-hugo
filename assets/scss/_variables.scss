@@ -1,19 +1,35 @@
-//site color variables
-$primary-color: #5D78FF;
-$secondary-color: #282F49;
-$text-color: #9D9EA5;
-$text-color-dark: #00113E;
-$site-ease: cubic-bezier(0.36, 0.03, 0, 0.91);
-$gray: #F7F9FF;
-$dark-gray: #646569;
+//
+// Colors
+//
 
-// solid colors
-$white: #fff;
-$black: #000;
+// General
+$primary: #5d78ff;
+$secondary: #282f49;
+// Text
+$headings-color: #282f49;
+$body-color: #7e7e8a;
 
-// Font Variables
-$primary-font: 'Yeseva One', cursive;
-$secondary-font: 'Poppins', sans-serif;
+//
+// Typography
+//
 
-// Bootstrap Variables
-$primary: #5D78FF;
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900|Yeseva+One&display=swap");
+$font-family-base: "Poppins", sans-serif;
+$headings-font-family: "Yeseva One", cursive;
+
+// Size
+$font-size-base: 1.125rem; // 18px
+$h1-font-size: 60px;
+$h2-font-size: 50px;
+$h3-font-size: 30px;
+$h4-font-size: 25px;
+$h5-font-size: 22px;
+$h6-font-size: 16px;
+
+// Spacing
+$headings-margin-bottom: 1.5rem;
+$line-height-base: 1.75;
+
+// Misc
+$link-hover-decoration: none;

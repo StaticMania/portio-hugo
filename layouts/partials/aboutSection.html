@@ -4,10 +4,9 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-lg-6 offset-lg-3">
-                <div class="about_header">
-                    <span>About</span>
-                    <h1> {{ .title }} </h1>
-                    <p> {{ .subtitle }} </p>
+                <div class="about_header mb-5">
+                    <span class="top-title">{{ .topTitle }}</span>
+                    {{ .title | markdownify}}
                 </div>
             </div>
         </div>
@@ -40,15 +39,15 @@
                                 </g>
                             </svg>
                         </div>
-                        {{ .content | markdownify}}
-                        <ul>
-                            <li><a class="btn btn-primary btn-zoom"
-                                    href="{{ .button1Target | absURL }}">{{ .button1Name }}</a>
-                            </li>
-                            <li><a class="btn btn-outline-primary btn-zoom" href="{{ .button2Target | absURL }}">
-                                    {{ .button2Name }} </a>
-                            </li>
-                        </ul>
+                        <div class="mb-4 text-light">
+                            {{ .content | markdownify}}
+                        </div>
+                        <div>
+                            <a class="btn btn-primary mr-3 btn-zoom"
+                                href="{{ .button1Target | absURL }}">{{ .button1Name }}</a>
+                            <a class="btn btn-outline-primary btn-zoom" href="{{ .button2Target | absURL }} " target="_blank">
+                                {{ .button2Name }} </a>
+                        </div>
                     </div>
                 </div>
             </div>

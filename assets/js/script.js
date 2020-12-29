@@ -69,13 +69,16 @@ $(document).ready(function () {
   // Smooth scrolling
   var scrollLink = $(".scroll");
   scrollLink.click(function (e) {
-    e.preventDefault();
-    $("body,html").animate(
-      {
-        scrollTop: $(this.hash).offset().top,
-      },
-      1000
-    );
+    let elem = $(this.hash)
+    if (elem.length) {
+      e.preventDefault();
+      $("body,html").animate(
+        {
+          scrollTop: elem.offset().top,
+        },
+        1000
+      );
+    }
   });
 
   $(".navbar-nav>li>a").on("click", function () {
@@ -110,7 +113,6 @@ $(document).ready(function () {
   });
 
   // skill count
-
   $(".skill__progress").waypoint(
     function () {
       $(".progress-value span").each(function () {
@@ -159,26 +161,24 @@ $(document).ready(function () {
 
   // Modal Popup
   $(".popup-button").magnificPopup({
+    disableOn: 700,
     type: "iframe",
-    iframe: {
-      patterns: {
-        youtube: {
-          index: "youtube.com/",
-          id: "v=",
-          src: "//www.youtube.com/embed/tgbNymZ7vqY",
-        },
-      },
-    },
+    mainClass: "mfp-fade",
+    removalDelay: 160,
+    preloader: false,
+
+    fixedContentPos: false,
   });
 
-  $(".portfolio-item-grid").masonry({
-    // options
+  var portfolioGrid = $(".portfolio-item-grid").masonry({
     itemSelector: ".portfolio-item",
-    // columnWidth: 200,
   });
 
-  //   blob animation
+  portfolioGrid.imagesLoaded().progress(function () {
+    portfolioGrid.masonry("layout");
+  });
 
+  // blob animation
   var tl = new TimelineMax({
     yoyo: true,
     repeat: -1,
