@@ -60,6 +60,9 @@ formspreeURL = "YOUR FORMSPREE URL"
 googleAnalytics = "YOUR GOOGLE ANALYTICS CODE"
 logo = "images/site-navigation/logo.png"
 
+[params.header]
+button = "Hire Me Now"
+
 [params.address]
 address = "23 Khan Niketon, Grand Street, NYK."
 email = "hello@example.com"
