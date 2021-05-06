@@ -3,11 +3,15 @@
 {{ partial "head.html" . }}
 
 <body>
-  {{ partial "navbar.html" . }}
+  {{ define "navbar"}}
+    {{ partial "navbar.html" . }}
+  {{ end }}
   <div id="content">
     {{ block "main" . }}{{ end }}
   </div>
-  {{ partial "footer.html" . }}
+  {{ define "footer"}}
+    {{ partial "footer.html" . }}
+  {{ end }}
 </body>
 
 </html>
