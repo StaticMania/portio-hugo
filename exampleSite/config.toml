@@ -3,54 +3,50 @@ languageCode = "en-us"
 paginate = 6
 theme = "portio"
 title = "Portio"
-# Main Menu
 [[menu.main]]
-name = "Home"
-url = "#home"
-weight = 1
-[[menu.main]]
-name = "About"
-url = "#about"
-weight = 2
-[[menu.main]]
-name = "Service"
-url = "#service"
-weight = 3
-[[menu.main]]
-name = "Work"
-url = "#portfolio"
-weight = 4
-[[menu.main]]
-name = "Resume"
-url = "#resume"
-weight = 5
+name = "Contact"
+url = "#contact"
+weight = 7
 [[menu.main]]
 name = "Blog"
 url = "#blog"
 weight = 6
 [[menu.main]]
-name = "Contact"
-url = "#contact"
-weight = 7
-
-# Sitemap Menu
-[[menu.sitemap]]
-name = "About me"
-url = "about"
+name = "Resume"
+url = "#resume"
+weight = 5
+[[menu.main]]
+name = "Work"
+url = "#portfolio"
+weight = 4
+[[menu.main]]
+name = "Service"
+url = "#service"
+weight = 3
+[[menu.main]]
+name = "About"
+url = "#about"
+weight = 2
+[[menu.main]]
+name = "Home"
+url = "#home"
 weight = 1
 [[menu.sitemap]]
-name = "Frequently Ask Question"
+name = "Latest Article"
 url = "#"
-weight = 2
+weight = 4
 [[menu.sitemap]]
 name = "Privacy & Policy"
 url = "#"
 weight = 3
 [[menu.sitemap]]
-name = "Latest Article"
+name = "Frequently Ask Question"
 url = "#"
-weight = 4
-
+weight = 2
+[[menu.sitemap]]
+name = "About me"
+url = "about"
+weight = 1
 [params]
 blogPageURL = "blog"
 contactLink = "contact"
@@ -59,20 +55,16 @@ footerLogo = "images/contact/widget-logo.png"
 formspreeURL = "YOUR FORMSPREE URL"
 googleAnalytics = "YOUR GOOGLE ANALYTICS CODE"
 logo = "images/site-navigation/logo.png"
-
 [params.address]
 address = "23 Khan Niketon, Grand Street, NYK."
 email = "hello@example.com"
 openingHours = "Open from 10am to 6pm (close at 5pm Sundays)"
 phone = "+(448) 833 5272 332"
-
 [params.map]
 APIkey = "YOUR GOOGLE MAP API"
 latitude = "23.7783741"
 longitude = "90.3746808"
 pinImage = "images/pin.png"
-
-# Social icons
 [[params.social]]
 icon = "fa-facebook-official"
 url = "https://www.facebook.com/"

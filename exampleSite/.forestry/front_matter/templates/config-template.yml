@@ -104,5 +104,3 @@ fields:
     - type: file
       name: pinImage
       label: pinImage
-pages:
-- config.toml
