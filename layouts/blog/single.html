@@ -24,19 +24,22 @@
         <i class="fa fa-clock-o"></i> &ensp;
         {{ .ReadingTime }} mins read
       </div>
-
+      {{ if .Params.tags }}
       <div class="col-lg-10 col-md-12 offset-lg-1 offset-md-0 text-center">
         <i class="fa fa-tag"></i> &ensp;
         {{ range (.GetTerms "tags") }}
         <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>;
         {{ end }}
       </div>
+      {{ end }}
+      {{ if .Params.categories }}
       <div class="col-lg-10 col-md-12 offset-lg-1 offset-md-0 text-center">
         <i class="fa fa-folder-open"></i> &ensp;
         {{ range (.GetTerms "categories") }}
         <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>;
         {{ end }}
       </div>
+      {{ end }}
     </div>
   </div>
   </div>
