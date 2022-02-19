@@ -80,6 +80,11 @@
     <div class="row mt-5">
       <div class="col-lg-12">
         <div class="singleBlog__content">
+
+          {{ if .Params.toc }}
+          <h3>Table of Contents</h3>
+          {{ .TableOfContents | replaceRE "<ul>[[:space:]]*<li>[[:space:]]*<ul>" "<ul>" | replaceRE "</ul>[[:space:]]*</li>[[:space:]]*</ul>" "</ul>" |  safeHTML }}
+          {{ end }}
           {{ .Content }}
         </div>
       </div>
