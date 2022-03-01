@@ -1,8 +1,7 @@
-{{ define "main" }}
+ {{ define "main" }}
 
-<header class="breadCrumb">
+ <header class="breadCrumb">
 	<div class="svg-img">
-
 		<img src={{"images/hero/figure-svg.svg" | absURL }} alt="">
 	</div>
 	<div class="animate-shape">
@@ -28,14 +27,14 @@
 				<h3 class="breadCrumb__title">{{ .Title }}</h3>
 				<nav aria-label="breadcrumb" class="d-flex justify-content-center">
 					<ol class="breadcrumb align-items-center">
-						<li class="breadcrumb-item"><a href="{{ .Site.BaseURL }}">Home</a></li>
-						<li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
+						Showing all posts with the tag "{{.Title}}"
 					</ol>
 				</nav>
 			</div>
 		</div>
 	</div>
 </header>
+
 
 <section class="section blog-page">
 	<div class="container">
@@ -59,5 +58,5 @@
 		</div>
 	</div>
 </section>
-
 {{ end }}
+
