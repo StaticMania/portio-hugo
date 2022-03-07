@@ -1,76 +1,95 @@
 .section {
+  padding-top: 70px;
+  @include desktop {
+    padding: 50px 0;
+  }
+  .svg-img {
+    position: absolute;
+    top: 30%;
+    left: -7%;
+    animation: move_top 5s infinite linear;
     @include desktop {
-        padding: 50px 0;
+      display: none;
     }
-    .svg-img {
-        position: absolute;
-        top: 30%;
-        left: -7%;
-        animation: move_top 5s infinite linear;
-        @include desktop {
-            display: none;
-        }
+  }
+  .animate-shape {
+    position: absolute;
+    top: 29%;
+    right: 4%;
+    height: 300px;
+    width: 300px;
+    svg {
+      width: 100%;
     }
-    .animate-shape {
-        position: absolute;
-        top: 29%;
-        right: 4%;
-        height: 300px;
-        width: 300px;
-        svg {
-            width: 100%;
-        }
-        @include desktop {
-            display: none;
-        }
+    @include desktop {
+      display: none;
     }
-    .animate-pattern {
-        position: absolute;
-        top: 46%;
-        right: 12%;
-        height: 100px;
-        width: 100px;
-        animation: move_top 3s infinite linear;
+  }
+  .animate-pattern {
+    position: absolute;
+    top: 46%;
+    right: 12%;
+    height: 100px;
+    width: 100px;
+    animation: move_top 3s infinite linear;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+    @include desktop {
+      display: none;
+    }
+  }
+  .singleBlog {
+    &__feature {
+      margin: 0 100px;
+      @include desktop {
+        margin: 0;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+      }
+    }
+    &__content {
+      margin: 0 200px 0 200px;
+      @include desktop {
+        margin: 0;
+      }
+      .blog-section {
+        margin-bottom: 60px;
         img {
-            height: 100%;
+          float: right;
+          mask: url("../images/hero/hero-mask-svg.png");
+          -webkit-mask-repeat: no-repeat;
+          -webkit-mask-size: contain;
+          -webkit-mask-position: center center;
+          @include tablet {
             width: 100%;
+            float: none;
+            margin-bottom: 40px;
+          }
         }
-        @include desktop {
-            display: none;
-        }
+      }
     }
-    .singleBlog {
-        &__feature {
-            margin: 0 100px;
-            @include desktop {
-                margin: 0;
-            }
-            img {
-                height: 100%;
-                width: 100%;
-                border-radius: 20px;
-            }
-        }
-        &__content {
-            margin: 0 200px 0 200px;
-            @include desktop {
-                margin: 0;
-            }
-            .blog-section {
-                margin-bottom: 60px;
-                img {
-                    float: right;
-                    mask: url("../images/hero/hero-mask-svg.png");
-                    -webkit-mask-repeat: no-repeat;
-                    -webkit-mask-size: contain;
-                    -webkit-mask-position: center center;
-                    @include tablet {
-                        width: 100%;
-                        float: none;
-                        margin-bottom: 40px;
-                    }
-                }
-            }
-        }
+  }
+}
+.post-meta {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  li {
+    list-style: none;
+    z-index: 2;
+    i {
+      padding-right: 7px;
     }
+    a {
+      color: #7e7e8a;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
 }

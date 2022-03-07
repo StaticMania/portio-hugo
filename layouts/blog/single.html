@@ -15,32 +15,32 @@
       </div>
     </div>
 
-    <div class="row p-3">
-      <div class="col-lg-10 col-md-10 offset-lg-1 offset-md-0 text-center">
-        <i class="fa fa-calendar"></i> &ensp;
+    <ul class="post-meta">
+      <li>
+        <i class="fa fa-calendar"></i>
         {{ .PublishDate.Format "January 2, 2006" }}
-      </div>
-      <div class="col-lg-10 col-md-12 offset-lg-1 offset-md-0 text-center">
-        <i class="fa fa-clock-o"></i> &ensp;
+      </li>
+      <li>
+        <i class="fa fa-clock-o"></i>
         {{ .ReadingTime }} mins read
-      </div>
+      </li>
       {{ if .Params.tags }}
-      <div class="col-lg-10 col-md-12 offset-lg-1 offset-md-0 text-center">
-        <i class="fa fa-tag"></i> &ensp;
+      <li>
+        <i class="fa fa-tag"></i>
         {{ range (.GetTerms "tags") }}
-        <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>;
+          <a class="text-capitalize" href="{{ .Permalink }}">{{ .LinkTitle }}</a>
         {{ end }}
-      </div>
+      </li>
       {{ end }}
       {{ if .Params.categories }}
-      <div class="col-lg-10 col-md-12 offset-lg-1 offset-md-0 text-center">
-        <i class="fa fa-folder-open"></i> &ensp;
+      <li>
+        <i class="fa fa-folder-open"></i>
         {{ range (.GetTerms "categories") }}
-        <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>;
+          <a class="text-capitalize" href="{{ .Permalink }}">{{ .LinkTitle }}</a>
         {{ end }}
-      </div>
+      </li>
       {{ end }}
-    </div>
+    </ul>
   </div>
   </div>
   </div>
@@ -82,9 +82,10 @@
         <div class="singleBlog__content">
 
           {{ if .Params.toc }}
-          <h3>Table of Contents</h3>
-          {{ .TableOfContents | replaceRE "<ul>[[:space:]]*<li>[[:space:]]*<ul>" "<ul>" | replaceRE "</ul>[[:space:]]*</li>[[:space:]]*</ul>" "</ul>" |  safeHTML }}
+            <h3>Table of Contents</h3>
+            {{ .TableOfContents | replaceRE "<ul>[[:space:]]*<li>[[:space:]]*<ul>" "<ul>" | replaceRE "</ul>[[:space:]]*</li>[[:space:]]*</ul>" "</ul>" |  safeHTML }}
           {{ end }}
+
           {{ .Content }}
         </div>
       </div>
