@@ -39,6 +39,18 @@ Checkout the live demo [here](https://portio-hugo.staticmania.com/)
 - Forestry Integrated.
 - Crafted for Personal Portfolio
 
+Added instructions to README.md on how to add a hugo contact form
+
+## [Add hugo contact form](https://fabform.io/a/hugo-contact-form)
+
+```
+<form action="https://fabform.io/f/{form-id}" method="post">
+ <label for="email">Your Email</label>
+ <input name="email" type="email">
+ <button type="submit">Submit</button> 
+</form>
+```
+
 ## Support
 
 Have some question or facing any technical trouble feel free to [Contact Us](https://staticmania.com/contact/)
