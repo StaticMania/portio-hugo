@@ -34,7 +34,7 @@ Checkout the live demo [here](https://portio-hugo.staticmania.com/)
 - Blog Support.
 - Well formatted code.
 - Easy Customization.
-- Formspree Contact form.
+- fabform Contact form.
 - Google Analytics.
 - Forestry Integrated.
 - Crafted for Personal Portfolio
