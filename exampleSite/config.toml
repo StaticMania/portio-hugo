@@ -60,8 +60,9 @@ blogPageURL = "blog"
 contactLink = "contact"
 copyright = "All right reserved copyright © Portio 2020"
 footerLogo = "images/contact/widget-logo.png"
-# We're using formspree.io for form handling, paste your formspree url below
-fabformURL  = "https://fabform.io/f/JpTXRUa"
+# We're using fabform.io for form handling, paste your fabform.io endpoint below
+# You can get a free account by visiting https://fabform.io
+fabformURL  = "https://fabform.io/f/<insert-fabform.io-endpoint-here>"
 googleAnalytics = "YOUR GOOGLE ANALYTICS CODE"
 logo = "images/site-navigation/logo.png"
 
