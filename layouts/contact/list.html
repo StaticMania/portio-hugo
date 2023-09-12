@@ -75,7 +75,8 @@
             </div>
           </div>
           <h4>Phone & Email</h4>
-          <p>{{ $address.phone }}<br>
+          <p>
+            <a href="tel:{{ $address.phone }}">{{ $address.phone }}</a><br>
             <a href="mailto:{{ $address.email }}">{{ $address.email }}</a>
           </p>
 

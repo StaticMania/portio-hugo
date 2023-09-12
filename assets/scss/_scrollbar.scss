@@ -1,0 +1,13 @@
+/* Webkit Scrollbar Customize */
+::-webkit-scrollbar-thumb {
+  background: $primary;
+
+  &:hover {
+    background: $secondary;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background: #fff;
+}
