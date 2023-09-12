@@ -40,7 +40,7 @@ weight = 8
 # Sitemap Menu
 [[menu.sitemap]]
 name = "About me"
-url = "about"
+url = "#about"
 weight = 1
 [[menu.sitemap]]
 name = "Frequently Ask Question"
