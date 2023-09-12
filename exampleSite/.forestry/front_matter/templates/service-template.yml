@@ -2,30 +2,24 @@
 label: Service Template
 hide_body: true
 fields:
-- type: boolean
-  name: enable
-  label: enable
-- type: text
-  name: topTitle
-  label: topTitle
-- type: text
-  name: title
-  label: title
-- type: text
-  name: subtitle
-  label: subtitle
-- type: field_group_list
-  name: service
-  label: service
-  fields:
+  - type: boolean
+    name: enable
+    label: enable
   - type: text
+    name: topTitle
+    label: topTitle
+  - type: textarea
     name: title
     label: title
-  - type: textarea
-    name: content
-    label: content
-  - type: file
-    name: image
-    label: Icon
+  - type: field_group_list
+    name: service
+    label: service
+    fields:
+      - type: textarea
+        name: content
+        label: content
+      - type: file
+        name: image
+        label: Icon
 pages:
-- data/serviceSection.yml
+  - data/serviceSection.yml
