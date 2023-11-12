@@ -5,7 +5,7 @@ description = "Portio is a simple, minimal and responsive Portfolio Hugo Theme. 
 homepage = "https://staticmania.com/product/portio-hugo/"
 tags = ["clean", "minimal", "blog", "responsive", "personal", "google analytics", "bootstrap", "portfolio", "white", "modern", "projects", "contact form", "creative"]
 features = ['bootstrap 4', 'responsive design', 'blog', 'responsive', 'minimal', 'business', 'hugo-theme', 'portfolio', 'creative', 'contact-form']
-min_version = "0.41"
+min_version = "0.110.0"
 
 [author]
   name = "Static Mania"
