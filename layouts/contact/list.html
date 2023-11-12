@@ -27,7 +27,7 @@
         <h3 class="breadCrumb__title">{{ .Title }}</h3>
         <nav aria-label="breadcrumb" class="d-flex justify-content-center">
           <ol class="breadcrumb align-items-center">
-            <li class="breadcrumb-item"><a href="{{ .Site.BaseURL }}">Home</a></li>
+            <li class="breadcrumb-item"><a href="{{ .Site.Home.Permalink}}">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">{{ .Params.breadcrumb }}</li>
           </ol>
         </nav>
@@ -175,8 +175,6 @@
             </div>
             <button type="submit" class="btn btn-primary">Sign in</button>
           </form> -->
-
-
 
         </div>
       </div>
